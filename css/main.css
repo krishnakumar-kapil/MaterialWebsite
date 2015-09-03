@@ -1,3 +1,26 @@
-.mdl-card{
-	margin: 2em 2em 2em 2em;
+body{
+	font-family: Roboto;
+}
+
+.mdl-content-card.mdl-card{
+	width: 100%;
+	margin: auto;
+	margin-top: 2em;
+	text-align: left;
+}
+
+.contentHeader{
+	text-align: center;
+}
+
+#about {
+	text-align: center;
+}
+
+.mdl-card__supporting-text {
+	text-align: left;
+}
+
+.mdl-skill-card{
+	width: 5em;
 }
