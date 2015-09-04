@@ -1,0 +1,84 @@
+@import "mixins";
+
+
+$font-stack: Roboto, Helvetica, sans-serif;
+$primary-color: #2196F3;
+$accent-color: 
+$font-size: 1em;
+
+body {
+  font-family: 100% $font-stack;
+  color: $primary-color;
+}
+
+.mdl-layout__header{
+	.mdl-layout-title{
+		font-size: $font-size + 2;
+		font-weight: thin;
+	}
+
+	.mdl-navigation{
+		.mdl-navigation__link{
+			font-size: $font-size+.25;
+		}
+	}
+}
+
+#employmentSears{
+	.mdl-card__title{
+		color: $primary-color;
+		height: 167px;
+		background: url(../Assets/sears_logo.png)  center / cover;
+	}
+}
+
+.mdl-content-card.mdl-card{
+	width: 100%;
+	margin: auto;
+	margin-top: 2em;
+	text-align: left;
+	@include shadow-4dp();
+
+	.mdl-skill-card{
+		width: 5em;
+	}
+
+	.mdl-card__title {
+		text-align: center;
+	}
+
+	.mdl-card__supporting-text {
+		text-align: left;
+		font-size: $font-size;
+		line-height: 1.50em;
+	}
+
+	.mdl-card__title{
+		text-align: center;
+	}
+}
+
+.contentHeader{
+	text-align: center;
+}
+
+.skill-grid{
+	.mdl-skill-card{
+		max-height: 100px;
+
+		.mdl-card-title{
+			text-align: center;
+		}
+	}
+}
+
+form{
+	text-align: center;
+	.form-element{
+		width: 100%;
+	}
+
+	form-button{
+		margin: auto;
+	}
+}

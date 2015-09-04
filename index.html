@@ -3,11 +3,14 @@
 	<title>Kapil Krishnakumar Website</title>
 
 	<link rel = "stylesheet" href = "css/main.css">
+	<link rel = "stylesheet" href = "css/style.css">
 	
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue-orange.min.css">
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
@@ -44,25 +47,45 @@
 	<div class = "mdl-grid">
 
 				<div class ="mdl-cell mdl-cell--2-col"></div>
-			    <div class="mdl-cell mdl-cell--8-col page-content" id = "about"> 	
-					<div class="mdl-content-card mdl-card mdl-shadow--2dp">
-					  <div class="mdl-card__title">
-					    <h2 class="mdl-card__title-text">About Me!</h2>
-					  </div>
-					  <div class="mdl-card__supporting-text">
-					    I am currently a sophomore majoring in Computer Science at the University of Texas at Austin. I am passionate about Software Development, especially in areas related to Full-Stack Development, Databases, Mobile Development, Machine Learning and Graphics.
-					  </div>
+			    <div class="mdl-cell mdl-cell--8-col page-content" id = "about"> 
+			    	<h2 class = "contentHeader">About Me!</h2>	
+
+					<div class="mdl-grid">
+				    	<div class = "mdl-cell mdl-cell--8-col">
+		    				<div class="mdl-content-card mdl-card">
+								<div class="mdl-card__title">
+								  <h2 class="mdl-card__title-text">About Me!</h2>
+								</div>
+		    				    <div class="mdl-card__supporting-text">
+		    				    	I am currently a sophomore majoring in Computer Science at the University of Texas at Austin. I am passionate about Software Development, especially in areas related to Full-Stack Development, Databases, Mobile Development, Machine Learning and Graphics.
+		    				    </div>
+		    		    	</div>
+				    	</div>
+
+				    	<div class = "mdl-cell mdl-cell--4-col">
+		    				<div class="mdl-content-card mdl-card">
+								<div class="mdl-card__title">
+								  <h2 class="mdl-card__title-text">Links</h2>
+								</div>
+		    				    <div class="mdl-card__supporting-text">
+		    				    	<a class = "social-link" href="https://www.linkedin.com/in/krishnakumarkapil"><i class="fa fa-linkedin-square fa-3x"></i></a>
+
+		    				    	<a href="https://www.facebook.com/kapil.krishnakumar"><i class="fa fa-facebook-square fa-3x"></i></a>
+		    				    </div>
+		    		    	</div>
+				    	</div>
 			    	</div>
+
 			    </div>
 
 			    <div class ="mdl-cell mdl-cell--2-col"></div>
 				<div class ="mdl-cell mdl-cell--2-col"></div>
 
 			    <div class="mdl-cell mdl-cell--8-col page-content" id = "experience">
-			    	<div class = "contentHeader"><h3>Experience</h3></div> 
+			    	<h2 class = "contentHeader">Experience</h2> 
 
 
-					<div class="mdl-content-card mdl-card mdl-shadow--2dp">
+					<div id = "employmentSears" class="mdl-content-card mdl-card mdl-shadow--2dp">
 					  <div class="mdl-card__title">
 					    <h2 class="mdl-card__title-text">Software Developer Intern at Sears Holdings</h2>
 					  </div>
@@ -88,36 +111,36 @@
 				<div class ="mdl-cell mdl-cell--2-col"></div>
 
 				 <div class="mdl-cell mdl-cell--8-col page-content" id = "skill">
-			    	<div class = "contentHeader"><h3>Skills</h3></div> 
+			    	<h2 class = "contentHeader">Skills</h2> 
 					
 					<div class="skill-grid mdl-grid">
-							<div class="mdl-cell mdl-cell--4-col mdl-skill-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
 							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">Java</h2>
+							    <h2 class="skill-title mdl-card__title-text">Java</h2>
 							  </div>
 							  <div class="mdl-card__supporting-text">
 								Proficient
 							  </div>
 					    	</div>
-					    	<div class="mdl-cell mdl-cell--4-col mdl-skill-card mdl-card mdl-shadow--2dp">
+					    	<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
 							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">Python</h2>
+							    <h2 class="skill-title mdl-card__title-text">Python</h2>
 							  </div>
 							  <div class="mdl-card__supporting-text">
 								Proficient
 							  </div>
 					    	</div>
-					    	<div class="mdl-cell mdl-cell--4-col mdl-skill-card mdl-card mdl-shadow--2dp">
+					    	<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
 							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">MySQL</h2>
+							    <h2 class="skill-title mdl-card__title-text">MySQL</h2>
 							  </div>
 							  <div class="mdl-card__supporting-text">
 								Expert
 							  </div>
 					    	</div>
-					    	<div class="mdl-cell mdl-cell--4-col mdl-skill-card mdl-card mdl-shadow--2dp">
+					    	<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
 							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">JavaScript</h2>
+							    <h2 class="skill-title mdl-card__title-text">JavaScript</h2>
 							  </div>
 							  <div class="mdl-card__supporting-text">
 								Proficient
@@ -162,27 +185,36 @@
 		    		<div class="mdl-content-card mdl-card mdl-shadow--2dp">
 		    		  <div class="mdl-card__supporting-text">
 		    		    <form action="#">
-		    		      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    		      <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 		    		        <input class="mdl-textfield__input" type="text" id="formName" />
 		    		        <label class="mdl-textfield__label" for="formName">Name</label>
 		    		      </div>
-		    		      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    		      <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
   	    		        	<input class="mdl-textfield__input" type="text" id="formEmail" />
   	    		        	<label class="mdl-textfield__label" for="formEmail">Email</label>
 	    		          </div>
 
-	    		          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	    		          <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
   	    		            	<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" />
   	    		            	<label class="mdl-textfield__label" for="sample4">Phone Number</label>
   	    		            	<span class="mdl-textfield__error">Input is not a number!</span>
       		          	  </div>
+
+      		          	  <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      		          	    <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
+      		          	    <label class="mdl-textfield__label" for="message">Message...</label>
+      		          	  </div>
+
+						  <div class = "form-button"></div>
+      		          	  <!-- Accent-colored raised button with ripple -->
+      		          	  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      		          	    Button
+      		          	  </button>
 		    		    </form>
 		    		  </div>
 		        	</div>
 
 		        </div>
-
-
 
 		</div>
 
