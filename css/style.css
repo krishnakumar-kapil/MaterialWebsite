@@ -1,3 +1,20 @@
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% Roboto, Helvetica, sans-serif;
   color: #333; }
+
+.mdl-content-card.mdl-card {
+  width: 100%;
+  margin: auto;
+  margin-top: 2em;
+  text-align: left; }
+  .mdl-content-card.mdl-card .mdl-skill-card {
+    width: 5em; }
+  .mdl-content-card.mdl-card .mdl-card__title {
+    text-align: center; }
+  .mdl-content-card.mdl-card .mdl-card__supporting-text {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.50em; }
+
+.contentHeader {
+  text-align: center; }
