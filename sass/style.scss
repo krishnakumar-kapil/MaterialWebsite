@@ -1,9 +1,22 @@
 $font-stack:    Roboto, Helvetica, sans-serif;
 $primary-color: #333;
+$font-size: 1em;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+}
+
+.mdl-layout__header{
+	.mdl-layout-title{
+		font-size: $font-size + 2;
+	}
+
+	.mdl-navigation{
+		.mdl-navigation__link{
+			font-size: $font-size;
+		}
+	}
 }
 
 .mdl-content-card.mdl-card{
@@ -22,7 +35,7 @@ body {
 
 	.mdl-card__supporting-text {
 		text-align: left;
-		font-size: 1em;
+		font-size: $font-size;
 		line-height: 1.50em;
 	}
 }

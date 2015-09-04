@@ -2,6 +2,12 @@ body {
   font: 100% Roboto, Helvetica, sans-serif;
   color: #333; }
 
+.mdl-layout__header .mdl-layout-title {
+  font-size: 3em; }
+
+.mdl-layout__header .mdl-navigation .mdl-navigation__link {
+  font-size: 1em; }
+
 .mdl-content-card.mdl-card {
   width: 100%;
   margin: auto;
