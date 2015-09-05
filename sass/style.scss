@@ -2,8 +2,8 @@
 
 
 $font-stack: Roboto, Helvetica, sans-serif;
-$primary-color: #2196F3;
-$accent-color: 
+$primary-color: #3F51B5;
+$accent-color: #3F51B5;
 $font-size: 1em;
 
 body {
@@ -12,6 +12,7 @@ body {
 }
 
 .mdl-layout__header{
+	background-color: $primary-color;
 	.mdl-layout-title{
 		font-size: $font-size + 2;
 		font-weight: thin;
@@ -28,7 +29,7 @@ body {
 	.mdl-card__title{
 		color: $primary-color;
 		height: 167px;
-		background: url(../Assets/sears_logo.png)  center / cover;
+		background: url(../Assets/sears_logo.png) center / cover ;
 	}
 }
 
@@ -51,6 +52,10 @@ body {
 		text-align: left;
 		font-size: $font-size;
 		line-height: 1.50em;
+
+		.social-link{
+			margin: .25em .25em .25em .25em;
+		}
 	}
 
 	.mdl-card__title{
