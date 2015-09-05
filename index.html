@@ -24,12 +24,12 @@
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="#about">About</a>
-        <a class="mdl-navigation__link" href="#experience">Experience</a>
-        <a class="mdl-navigation__link" href="#skill">Skills</a>
-        <a class="mdl-navigation__link" href="#projects">Projects</a>
-        <a class="mdl-navigation__link" href="#contact">Contact</a>
+      <nav class="mdl-navigation mdl-layout--large-screen-only mdl-js-ripple-effect ">
+        <a class="mdl-navigation__link active" href="#about">ABOUT</a>
+        <a class="mdl-navigation__link" href="#experience">EXPERIENCE</a>
+        <a class="mdl-navigation__link" href="#skill">SKILLS</a>
+        <a class="mdl-navigation__link" href="#projects">PROJECTS</a>
+        <a class="mdl-navigation__link" href="#contact">CONTACT</a>
       </nav>
     </div>
   </header>
@@ -53,37 +53,39 @@
 	<div class = "mdl-grid">
 
 				<div class ="mdl-cell mdl-cell--2-col"></div>
-			    <div class="mdl-cell mdl-cell--8-col page-content" id = "about"> 
-			    	<h2 class = "contentHeader">About Me!</h2>	
+				    <div class="mdl-cell mdl-cell--8-col page-content" id = "about"> 
+				    	<div class = "super-content-card mdl-card">
+					    	<h2 class = "contentHeader">About Me!</h2>	
 
-					<div class="mdl-grid">
-				    	<div class = "mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet">
-		    				<div class="mdl-content-card mdl-card">
-								<div class="mdl-card__title">
-								  <h2 class="mdl-card__title-text">About Me!</h2>
-								</div>
-		    				    <div class="mdl-card__supporting-text">
-		    				    	I am currently a sophomore majoring in Computer Science at the University of Texas at Austin. I am passionate about Software Development, especially in areas related to Full-Stack Development, Databases, Mobile Development, Machine Learning and Graphics.
-		    				    </div>
-		    		    	</div>
+							<div class="mdl-grid">
+						    	<div class = "mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-phone">
+				    				<div class="mdl-content-card mdl-card" id = "aboutMeCard">
+										<div class="mdl-card__title">
+										  <h2 class="mdl-card__title-text">About Me!</h2>
+										</div>
+				    				    <div class="mdl-card__supporting-text">
+				    				    	I am currently a sophomore majoring in Computer Science at the University of Texas at Austin. I am passionate about Software Development, especially in areas related to Full-Stack Development, Databases, Mobile Development, Machine Learning and Graphics.
+				    				    </div>
+				    		    	</div>
+						    	</div>
+
+						    	<div class = "mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--hide-phone">
+				    				<div class="mdl-content-card mdl-card">
+										<div class="mdl-card__title">
+										  <h2 class="mdl-card__title-text">Links</h2>
+										</div>
+				    				    <div class="mdl-card__supporting-text">
+				    				    	<a class = "social-link" href="https://www.linkedin.com/in/krishnakumarkapil"><i class="fa fa-linkedin-square fa-3x"></i></a>
+				    				    	<br>
+
+				    				    	<a class = "social-link" href="https://www.facebook.com/kapil.krishnakumar"><i class="fa fa-facebook-square fa-3x"></i></a>
+											<br>
+				    				    	<a class = "social-link" href="https://github.com/krishnakumar-kapil"><i class="fa fa-github-square fa-3x"></i></a>
+				    				    </div>
+				    		    	</div>
+						    	</div>
+					    	</div>
 				    	</div>
-
-				    	<div class = "mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--hide-phone">
-		    				<div class="mdl-content-card mdl-card">
-								<div class="mdl-card__title">
-								  <h2 class="mdl-card__title-text">Links</h2>
-								</div>
-		    				    <div class="mdl-card__supporting-text">
-		    				    	<a class = "social-link" href="https://www.linkedin.com/in/krishnakumarkapil"><i class="fa fa-linkedin-square fa-3x"></i></a>
-		    				    	<br>
-
-		    				    	<a class = "social-link" href="https://www.facebook.com/kapil.krishnakumar"><i class="fa fa-facebook-square fa-3x"></i></a>
-									<br>
-		    				    	<a class = "social-link" href="https://github.com/krishnakumar-kapil"><i class="fa fa-github-square fa-3x"></i></a>
-		    				    </div>
-		    		    	</div>
-				    	</div>
-			    	</div>
 
 			    </div>
 
@@ -161,7 +163,7 @@
 				<div class ="mdl-cell mdl-cell--2-col page-content"></div>
 
 			    <div class="mdl-cell mdl-cell--8-col page-content" id = "projects"> 
-			    	<div class = "contentHeader"><h2>Projects</h2></div>
+			    	<h2 class = "contentHeader">Projects</h2>
 
 
 					<div class="mdl-content-card mdl-card mdl-shadow--2dp">
@@ -188,12 +190,12 @@
 				<div class ="mdl-cell mdl-cell--2-col page-content"></div>
 
 		        <div class="mdl-cell mdl-cell--8-col page-content" id = "contact"> 
-		        	<div class = "contentHeader"><h2>Contact Me</h2></div>
+		        	<h2 class = "contentHeader">Contact Me</h2>
 
 
 		    		<div class="mdl-content-card mdl-card mdl-shadow--2dp">
 		    		  <div class="mdl-card__supporting-text">
-		    		    <form action="#">
+		    		    <form action="//formspree.io/your@email.com" method="POST">
 		    		      <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 		    		        <input class="mdl-textfield__input" type="text" id="formName" />
 		    		        <label class="mdl-textfield__label" for="formName">Name</label>
@@ -216,8 +218,7 @@
 
 						  <div class = "form-button"></div>
       		          	  <!-- Accent-colored raised button with ripple -->
-      		          	  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-      		          	    Button
+      		          	  <input type = "submit" value = "send" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
       		          	  </button>
 		    		    </form>
 		    		  </div>

@@ -2,41 +2,70 @@
 
 
 $font-stack: Roboto, Helvetica, sans-serif;
-$primary-color: #3F51B5;
-$accent-color: #3F51B5;
+$primary-color: #03A9F4;
+$accent-color:#FFEB3B;
+
+$body-background: #E0E0E0;
+$card-super-background: $primary-color;
+$header-color: black;
+
 $font-size: 1em;
+
+$break-small: 320px;
+$break-tablet: 768px;
+$break-desktop: 1224px;
 
 body {
   font-family: 100% $font-stack;
-  color: $primary-color;
+  background-color: $body-background;
 }
 
-.mdl-layout__header{
-	background-color: $primary-color;
-	.mdl-layout-title{
-		font-size: $font-size + 2;
-		font-weight: thin;
-	}
 
-	.mdl-navigation{
-		.mdl-navigation__link{
-			font-size: $font-size+.25;
+.mdl-layout{
+	.mdl-layout__header{
+		background-color: $primary-color;
+		color: $header-color;
+		.mdl-layout-title{
+/*			font-size: $font-size + 2;*/
+			font-weight: thin;
+		}
+
+		.mdl-layout__drawer-button{
+			@media screen and (max-width: $break-small) {
+				margin-top: 1em;
+		  	}
+		  	@media screen and (max-width: $break-tablet) {
+				margin-top: .35em;
+		  	}
+		  	@media screen and (max-width: $break-desktop) {
+				margin-top: .65em;
+		  	}
+		  	color: $header-color;
+			height: 35px;
+			margin-left: .5em;
+			margin-top: .7em;
+		}
+
+		.mdl-navigation{
+			.mdl-navigation__link{
+				color: $header-color;
+				font-size: $font-size+.25;
+				&:hover {
+				   color: $accent-color;
+			 	}
+			}
 		}
 	}
 }
 
-#employmentSears{
-	.mdl-card__title{
-		color: $primary-color;
-		height: 167px;
-		background: url(../Assets/sears_logo.png) center / cover ;
-	}
+.super-content-card.mdl-card{
+	width: 100%;
+	background-color: $card-super-background;
+	@include shadow-2dp();
 }
-
 .mdl-content-card.mdl-card{
 	width: 100%;
 	margin: auto;
-	margin-top: 2em;
 	text-align: left;
 	@include shadow-4dp();
 
@@ -54,7 +83,11 @@ body {
 		line-height: 1.50em;
 
 		.social-link{
+			color: black;
 			margin: .25em .25em .25em .25em;
+			&:hover {
+			   color: $accent-color;
+			 }
 		}
 	}
 
@@ -64,15 +97,37 @@ body {
 }
 
 .contentHeader{
+	font-weight: thin;
 	text-align: center;
+	margin-bottom: .25em;
 }
 
-.skill-grid{
-	.mdl-skill-card{
-		max-height: 100px;
+.mdl-grid{
+	.skill-grid{
+		.mdl-skill-card{
+			max-height: 100px;
 
-		.mdl-card-title{
-			text-align: center;
+			.mdl-card-title{
+				text-align: center;
+			}
+		}
+	}
+}
+
+#aboutMeCard{
+	.mdl-card__title{
+		color: $accent-color;
+		height: 200px;
+		background: url(../Assets/uttower.jpg)center / cover;
+	}
+}
+
+#employmentSears{
+	.mdl-card__title{
+		height: 167px;
+		background: url(../Assets/sears_logo.png)  center / cover;
+		.mdl-card__title-text{
+			color: $accent-color;
 		}
 	}
 }
