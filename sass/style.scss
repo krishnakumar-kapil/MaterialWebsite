@@ -1,9 +1,14 @@
 @import "mixins";
 
+$hover-time: .25s;
 
 $font-stack: Roboto, Helvetica, sans-serif;
 $primary-color: #03A9F4;
-$accent-color:#FFEB3B;
+$primary-dark: #01579B;
+
+
+$accent-color:#4CAF50;
+$accent-dark:#2E7D32;
 
 $body-background: #E0E0E0;
 $card-super-background: $primary-color;
@@ -50,8 +55,18 @@ body {
 			.mdl-navigation__link{
 				color: $header-color;
 				font-size: $font-size+.25;
+				-o-transition:$hover-time;
+				-ms-transition:$hover-time;
+				-moz-transition:$hover-time;
+				-webkit-transition:$hover-time;
+				/* ...and now for the proper property */
+				transition:$hover-time;
 				&:hover {
-				   color: $accent-color;
+				   color: $accent-dark;
+				   /*background-color: $primary-dark;*/
+			 	}
+			 	&:actove{
+			 		background-color: $primary-dark;
 			 	}
 			}
 		}
@@ -64,6 +79,7 @@ body {
 	@include shadow-2dp();
 }
 .mdl-content-card.mdl-card{
+	background-color: $body-background;
 	width: 100%;
 	margin: auto;
 	text-align: left;
@@ -120,6 +136,9 @@ body {
 		height: 200px;
 		background: url(../Assets/uttower.jpg)center / cover;
 	}
+}
+
+#experience{
 }
 
 #employmentSears{

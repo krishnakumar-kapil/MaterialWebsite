@@ -24,9 +24,18 @@ body {
         margin-top: .65em; } }
   .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link {
     color: black;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    -o-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -webkit-transition: 0.25s;
+    /* ...and now for the proper property */
+    transition: 0.25s; }
     .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
-      color: #FFEB3B; }
+      color: #2E7D32;
+      /*background-color: $primary-dark;*/ }
+    .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:actove {
+      background-color: #01579B; }
 
 .super-content-card.mdl-card {
   width: 100%;
@@ -34,6 +43,7 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
 .mdl-content-card.mdl-card {
+  background-color: #E0E0E0;
   width: 100%;
   margin: auto;
   text-align: left;
@@ -50,7 +60,7 @@ body {
       color: black;
       margin: 0.25em 0.25em 0.25em 0.25em; }
       .mdl-content-card.mdl-card .mdl-card__supporting-text .social-link:hover {
-        color: #FFEB3B; }
+        color: #4CAF50; }
   .mdl-content-card.mdl-card .mdl-card__title {
     text-align: center; }
 
@@ -65,7 +75,7 @@ body {
     text-align: center; }
 
 #aboutMeCard .mdl-card__title {
-  color: #FFEB3B;
+  color: #4CAF50;
   height: 200px;
   background: url(../Assets/uttower.jpg) center/cover; }
 
@@ -73,7 +83,7 @@ body {
   height: 167px;
   background: url(../Assets/sears_logo.png) center/cover; }
   #employmentSears .mdl-card__title .mdl-card__title-text {
-    color: #FFEB3B; }
+    color: #4CAF50; }
 
 form {
   text-align: center; }

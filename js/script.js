@@ -1,5 +1,7 @@
-$(document).ready(){
-	$('.mdl-layout__header .mdl-navigation a').on('click', function(){
-		
-	});
-};
+$(document).ready(function() {
+    $("[href]").each(function() {
+    if (this.href == window.location.href) {
+        $(this).addClass("active");
+        }
+    });
+});
