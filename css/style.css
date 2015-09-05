@@ -1,16 +1,17 @@
 body {
   font-family: 100% Roboto, Helvetica, sans-serif;
-  color: #2196F3; }
+  color: #3F51B5; }
 
-.mdl-layout__header .mdl-layout-title {
-  font-size: 3em;
-  font-weight: thin; }
-
-.mdl-layout__header .mdl-navigation .mdl-navigation__link {
-  font-size: 1.25em; }
+.mdl-layout__header {
+  background-color: #3F51B5; }
+  .mdl-layout__header .mdl-layout-title {
+    font-size: 3em;
+    font-weight: thin; }
+  .mdl-layout__header .mdl-navigation .mdl-navigation__link {
+    font-size: 1.25em; }
 
 #employmentSears .mdl-card__title {
-  color: #2196F3;
+  color: #3F51B5;
   height: 167px;
   background: url(../Assets/sears_logo.png) center/cover; }
 
@@ -28,6 +29,8 @@ body {
     text-align: left;
     font-size: 1em;
     line-height: 1.50em; }
+    .mdl-content-card.mdl-card .mdl-card__supporting-text .social-link {
+      margin: 0.25em 0.25em 0.25em 0.25em; }
   .mdl-content-card.mdl-card .mdl-card__title {
     text-align: center; }
 
