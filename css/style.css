@@ -34,7 +34,7 @@ body {
     .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
       color: #2E7D32;
       /*background-color: $primary-dark;*/ }
-    .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:actove {
+    .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:active {
       background-color: #01579B; }
 
 .super-content-card.mdl-card {
@@ -68,6 +68,9 @@ body {
   font-weight: thin;
   text-align: center;
   margin-bottom: .25em; }
+
+.mdl-grid .mdl-cell {
+  margin: 0.5em 0.5em 0.5em 0.5em; }
 
 .mdl-grid .skill-grid .mdl-skill-card {
   max-height: 100px; }

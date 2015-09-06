@@ -65,7 +65,7 @@ body {
 				   color: $accent-dark;
 				   /*background-color: $primary-dark;*/
 			 	}
-			 	&:actove{
+			 	&:active{
 			 		background-color: $primary-dark;
 			 	}
 			}
@@ -77,6 +77,7 @@ body {
 	width: 100%;
 	background-color: $card-super-background;
 	@include shadow-2dp();
+
 }
 .mdl-content-card.mdl-card{
 	background-color: $body-background;
@@ -103,6 +104,7 @@ body {
 			margin: .25em .25em .25em .25em;
 			&:hover {
 			   color: $accent-color;
+
 			 }
 		}
 	}
@@ -119,6 +121,9 @@ body {
 }
 
 .mdl-grid{
+	.mdl-cell{
+		margin: .5em .5em .5em .5em;
+	}
 	.skill-grid{
 		.mdl-skill-card{
 			max-height: 100px;
@@ -136,9 +141,6 @@ body {
 		height: 200px;
 		background: url(../Assets/uttower.jpg)center / cover;
 	}
-}
-
-#experience{
 }
 
 #employmentSears{
