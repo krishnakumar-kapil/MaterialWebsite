@@ -22,20 +22,29 @@ body {
     @media screen and (max-width: 1224px) {
       .mdl-layout .mdl-layout__header .mdl-layout__drawer-button {
         margin-top: .65em; } }
-  .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link {
-    color: black;
-    font-size: 1.25em;
-    -o-transition: 0.25s;
-    -ms-transition: 0.25s;
-    -moz-transition: 0.25s;
-    -webkit-transition: 0.25s;
-    /* ...and now for the proper property */
-    transition: 0.25s; }
-    .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
-      color: #2E7D32;
-      /*background-color: $primary-dark;*/ }
-    .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:active {
-      background-color: #01579B; }
+  .mdl-layout .mdl-layout__header .mdl-navigation {
+    text-align: center; }
+    .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link {
+      color: black;
+      font-size: 1.25em;
+      -o-transition: 0.25s;
+      -ms-transition: 0.25s;
+      -moz-transition: 0.25s;
+      -webkit-transition: 0.25s;
+      /* ...and now for the proper property */
+      transition: 0.25s; }
+      .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
+        color: #2E7D32;
+        /*background-color: $primary-dark;*/ }
+      .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:active {
+        background-color: #01579B; }
+
+.nav-bar-social {
+  margin: auto; }
+  .nav-bar-social a {
+    color: black; }
+    .nav-bar-social a:hover {
+      color: #4CAF50; }
 
 .super-content-card.mdl-card {
   width: 100%;
@@ -48,8 +57,6 @@ body {
   margin: auto;
   text-align: left;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
-  .mdl-content-card.mdl-card .mdl-skill-card {
-    width: 5em; }
   .mdl-content-card.mdl-card .mdl-card__title {
     text-align: center; }
   .mdl-content-card.mdl-card .mdl-card__supporting-text {
@@ -72,9 +79,10 @@ body {
 .mdl-grid .mdl-cell {
   margin: 0.5em 0.5em 0.5em 0.5em; }
 
-.mdl-grid .skill-grid .mdl-skill-card {
-  max-height: 100px; }
-  .mdl-grid .skill-grid .mdl-skill-card .mdl-card-title {
+.skill-grid .mdl-skill-card {
+  max-height: 100px;
+  min-width: 100%; }
+  .skill-grid .mdl-skill-card .mdl-card-title {
     text-align: center; }
 
 #aboutMeCard .mdl-card__title {
@@ -92,5 +100,9 @@ form {
   text-align: center; }
   form .form-element {
     width: 100%; }
+  form .mdl-textfield {
+    color: #4CAF50; }
   form form-button {
     margin: auto; }
+  form .mdl-button--accent.mdl-button--accent.mdl-button--raised, form .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    background-color: #4CAF50; }
