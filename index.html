@@ -4,6 +4,9 @@
 
 	<link rel = "stylesheet" href = "css/main.css">
 	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/projects.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	
 	 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue-green.min.css" /> 
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
@@ -11,6 +14,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script src = "js/script.js"></script>
 
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
@@ -100,18 +105,23 @@
 				    	<h2 class = "contentHeader">Experience</h2> 
 
 						<div class = "mdl-grid">
-
+							
 							<div id = "employmentSears" class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
-							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">Software Developer Intern at Sears Holdings</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    Created a MVC Framework for RESTFul Web Services to assist the Core Search team in server management and analysis for the following web services using AngularJS and Java Spring.
-							    This helped the Core Search team in 15-20 % as they had a condensed set of applications for server management and improved debugging with analysis tools as well.
-							    Developed web service for managing server status and jobs running on servers.
-							    Built system for storage of Job Statistics using Java, Python, Cassandra and displaying of data after analysis using AngularJS and Google Visualization API.
-							    Developed a Report Generating Web Service for business element using Java and MySQL
-							  </div>
+								<div class="mdl-card__title">
+								  <h2 class="mdl-card__title-text">Software Developer Intern at Sears Holdings</h2>
+								</div>
+								<img src = "./Assets/sears_logo.png" class = "logo"></img>
+								 
+								  <div class="mdl-card__supporting-text">
+									  	<ul>
+										    <li> Created a MVC Framework for RESTFul Web Services to assist the Core Search team in server management and analysis for the following web services using AngularJS and Java Spring.</li>
+										    <li>This helped the Core Search team in 15-20 % as they had a condensed set of applications for server management and improved debugging with analysis tools as well.</li>
+										    <li>Developed web service for managing server status and jobs running on servers.</li>
+										    <li>Built system for storage of Job Statistics using Java, Python, Cassandra and displaying of data after analysis using AngularJS and Google Visualization API.</li>
+										    <li>Developed a Report Generating Web Service for business element using Java and MySQL</li>
+										</ul>
+								  </div>
+
 					    	</div>
 					    	<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
 							  <div class="mdl-card__title">
@@ -179,23 +189,67 @@
 				    	<h2 class = "contentHeader">Projects</h2>
 
 						<div class ="mdl-grid">
-							<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
-							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">BreakTimePass</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    Keeps track of how long you spend on websites like facebook,etc. and shows the number of times you visit one!
-							  </div>
-					    	</div>
+								<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
+								<div class = "mdl-grid">	
+									<div class = "mdl-cell project" id = "breakTimePass">
+									  <div class="mdl-card__title">
+									    <h2 class="mdl-card__title-text"><a href= "https://chrome.google.com/webstore/detail/breaktimepass/pinhmfgenkdniafofjhnbkfcakegkmea">BreakTimePass</a></h2>
+									  </div>
+									  <div class="mdl-card__supporting-text">
+									    Keeps track of how long you spend on websites like facebook,etc. and shows the number of times you visit one!
+										<br>
+										<button id = "readMoreBreak" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+										  Read More!
+										</button>
+									    <div id = "displayMoreBreak">
+											Used ChartistJS, Material Design Lite, Chrome API's to create it.<br>
+											Get it over here: <a class = "social-link" href ="https://chrome.google.com/webstore/detail/breaktimepass/pinhmfgenkdniafofjhnbkfcakegkmea"><i class="fa fa-chrome fa-2x"></i></a>
+											<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/BreakTimePass"><i class="fa fa-github fa-2x"></i></a>
+									    </div>
+									  </div>
+									 </div>
+									  <div class ="mdl-cell project breakPic">
+									  	<img src = "Assets/breaktime.png">
+									  </div>
+								</div>
+						    	</div>
 
-							<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
+				    		<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "railway">
+				    		  <div class="mdl-card__title">
+				    		    <h2 class="mdl-card__title-text">Railway Ticketing Model</h2>
+				    		  </div>
+				    		  <div class="mdl-card__supporting-text">
+				    		    Developed a ticketing system to re-create and analyse the Indian Ticketing system for possible improvements. 
+								<br>
+								<button id = "readMoreRailway" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+								  Read More!
+								</button>
+							    <div id = "displayMoreRailway">
+									Created using Java and MySQL using JDBC connector.
+									<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/Train-Reservation-Project"><i class="fa fa-github fa-2x"></i></a>
+							    </div>
+				    		    
+				    		  </div>
+				        	</div>	
+							<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "scamMusuem">
 							  <div class="mdl-card__title">
 							    <h2 class="mdl-card__title-text">Scam Museum</h2>
 							  </div>
 							  <div class="mdl-card__supporting-text">
-							    An Interactive Virtual Musuem Depicting the corruption that has afflicted India.
+							    An Interactive Virtual Musuem Depicting the corruption that has afflicted India in which I was the programmer.
+							    
+						    	<br>
+						    	<button id = "readMoreMuseum" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+						    	  Read More!
+						    	</button>
+						        <div id = "displayMoreMuseum">
+						    		Created using ActionScript in Adobe Flash and Photoshop.
+						    		<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/Train-Reservation-Project"><i class="fa fa-github fa-2x"></i></a>
+						        </div>
 							  </div>
 					    	</div>
+
+
 					    </div>
 					</div>
 			    </div>

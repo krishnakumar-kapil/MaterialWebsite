@@ -3,12 +3,12 @@
 $hover-time: .25s;
 
 $font-stack: Roboto, Helvetica, sans-serif;
-$primary-color: #03A9F4;
+$primary-color: #4CAF50;
 $primary-dark: #01579B;
 
 
-$accent-color:#4CAF50;
-$accent-dark:#2E7D32;
+$accent-color:#E65100;
+$accent-dark:#E65100;
 
 $body-background: #E0E0E0;
 $card-super-background: $primary-color;
@@ -21,8 +21,9 @@ $break-tablet: 768px;
 $break-desktop: 1224px;
 
 body {
-  font-family: 100% $font-stack;
-  background-color: $body-background;
+	color: black;
+	font-family: 100% $font-stack;
+ 	background-color: $body-background;
 }
 
 
@@ -100,9 +101,13 @@ body {
 
 	.mdl-card__title {
 		text-align: center;
+		a{
+			color: $accent-color;
+		}
 	}
 
 	.mdl-card__supporting-text {
+		padding-top: .5em;
 		text-align: left;
 		font-size: $font-size;
 		line-height: 1.50em;
@@ -119,6 +124,8 @@ body {
 
 	.mdl-card__title{
 		text-align: center;
+		padding-bottom: .25em;
+		padding-top: .5em;
 	}
 }
 
@@ -129,8 +136,19 @@ body {
 }
 
 .mdl-grid{
+	width: auto;
+	.projectLink{
+		&:hover{
+		}
+	}
 	.mdl-cell{
 		margin: .5em .5em .5em .5em;
+		.project{
+			width: 47%;
+			.breakpic{
+				margin: auto;
+			}
+		}
 	}
 }
 
@@ -149,17 +167,26 @@ body {
 	.mdl-card__title{
 		color: $accent-color;
 		height: 200px;
-		background: url(../Assets/uttower.jpg)center / cover;
+		background: url(../Assets/uttower.jpg) center bottom;
 	}
 }
 
 #employmentSears{
+	.logo{
+		height: 200px;
+	}
 	.mdl-card__title{
-		height: 167px;
-		background: url(../Assets/sears_logo.png)  center / cover;
-		.mdl-card__title-text{
-			color: $accent-color;
-		}
+		padding-bottom: .25em;
+		-o-transition:$hover-time;
+		-ms-transition:$hover-time;
+		-moz-transition:$hover-time;
+		-webkit-transition:$hover-time;
+		/* ...and now for the proper property */
+		transition:$hover-time;
+		color: black;
+	}
+	.mdl-card__supporting-text{
+		padding-top:.25em;
 	}
 }
 

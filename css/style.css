@@ -1,9 +1,10 @@
 body {
+  color: black;
   font-family: 100% Roboto, Helvetica, sans-serif;
   background-color: #E0E0E0; }
 
 .mdl-layout .mdl-layout__header {
-  background-color: #03A9F4;
+  background-color: #4CAF50;
   color: black; }
   .mdl-layout .mdl-layout__header .mdl-layout-title {
     /*			font-size: $font-size + 2;*/
@@ -34,7 +35,7 @@ body {
       /* ...and now for the proper property */
       transition: 0.25s; }
       .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
-        color: #2E7D32;
+        color: #E65100;
         /*background-color: $primary-dark;*/ }
       .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:active {
         background-color: #01579B; }
@@ -44,11 +45,11 @@ body {
   .nav-bar-social a {
     color: black; }
     .nav-bar-social a:hover {
-      color: #4CAF50; }
+      color: #E65100; }
 
 .super-content-card.mdl-card {
   width: 100%;
-  background-color: #03A9F4;
+  background-color: #4CAF50;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
 .mdl-content-card.mdl-card {
@@ -59,7 +60,10 @@ body {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
   .mdl-content-card.mdl-card .mdl-card__title {
     text-align: center; }
+    .mdl-content-card.mdl-card .mdl-card__title a {
+      color: #E65100; }
   .mdl-content-card.mdl-card .mdl-card__supporting-text {
+    padding-top: .5em;
     text-align: left;
     font-size: 1em;
     line-height: 1.50em; }
@@ -67,17 +71,25 @@ body {
       color: black;
       margin: 0.25em 0.25em 0.25em 0.25em; }
       .mdl-content-card.mdl-card .mdl-card__supporting-text .social-link:hover {
-        color: #4CAF50; }
+        color: #E65100; }
   .mdl-content-card.mdl-card .mdl-card__title {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: .25em;
+    padding-top: .5em; }
 
 .contentHeader {
   font-weight: thin;
   text-align: center;
   margin-bottom: .25em; }
 
-.mdl-grid .mdl-cell {
-  margin: 0.5em 0.5em 0.5em 0.5em; }
+.mdl-grid {
+  width: auto; }
+  .mdl-grid .mdl-cell {
+    margin: 0.5em 0.5em 0.5em 0.5em; }
+    .mdl-grid .mdl-cell .project {
+      width: 47%; }
+      .mdl-grid .mdl-cell .project .breakpic {
+        margin: auto; }
 
 .skill-grid .mdl-skill-card {
   max-height: 100px;
@@ -86,23 +98,33 @@ body {
     text-align: center; }
 
 #aboutMeCard .mdl-card__title {
-  color: #4CAF50;
+  color: #E65100;
   height: 200px;
-  background: url(../Assets/uttower.jpg) center/cover; }
+  background: url(../Assets/uttower.jpg) center bottom; }
+
+#employmentSears .logo {
+  height: 200px; }
 
 #employmentSears .mdl-card__title {
-  height: 167px;
-  background: url(../Assets/sears_logo.png) center/cover; }
-  #employmentSears .mdl-card__title .mdl-card__title-text {
-    color: #4CAF50; }
+  padding-bottom: .25em;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  /* ...and now for the proper property */
+  transition: 0.25s;
+  color: black; }
+
+#employmentSears .mdl-card__supporting-text {
+  padding-top: .25em; }
 
 form {
   text-align: center; }
   form .form-element {
     width: 100%; }
   form .mdl-textfield {
-    color: #4CAF50; }
+    color: #E65100; }
   form form-button {
     margin: auto; }
   form .mdl-button--accent.mdl-button--accent.mdl-button--raised, form .mdl-button--accent.mdl-button--accent.mdl-button--fab {
-    background-color: #4CAF50; }
+    background-color: #E65100; }
