@@ -7,6 +7,8 @@
 	<link rel = "stylesheet" href = "css/projects.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 	
 	 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue-green.min.css" /> 
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
@@ -16,6 +18,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<script src = "js/script.js"></script>
+	<script src = "js/bubble.js"></script>
 
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
@@ -58,244 +61,439 @@
   </div>
   <main class="mdl-layout__content">
 	<div class = "mdl-grid">
+	
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
+			<!-- About -->
+		    <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop page-content" id = "about"> 
+		    	<div class = "super-content-card mdl-card">
+			    	<h2 class = "contentHeader">About Me!</h2>	
 
-				<div class ="mdl-cell mdl-cell--2-col"></div>
-				    <div class="mdl-cell mdl-cell--8-col page-content" id = "about"> 
-				    	<div class = "super-content-card mdl-card">
-					    	<h2 class = "contentHeader">About Me!</h2>	
-
-							<div class="mdl-grid">
-						    	<div class = "mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-phone">
-				    				<div class="mdl-content-card mdl-card" id = "aboutMeCard">
-										<div class="mdl-card__title">
-										  <h2 class="mdl-card__title-text">About Me!</h2>
-										</div>
-				    				    <div class="mdl-card__supporting-text">
-				    				    	I am currently a sophomore majoring in Computer Science at the University of Texas at Austin. I am passionate about Software Development, especially in areas related to Full-Stack Development, Databases, Mobile Development, Machine Learning and Graphics.
-				    				    </div>
-				    		    	</div>
-						    	</div>
-
-						    	<div class = "mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--hide-phone">
-				    				<div class="mdl-content-card mdl-card">
-										<div class="mdl-card__title">
-										  <h2 class="mdl-card__title-text">Links</h2>
-										</div>
-				    				    <div class="mdl-card__supporting-text">
-				    				    	<a class = "social-link" href="https://www.linkedin.com/in/krishnakumarkapil"><i class="fa fa-linkedin-square fa-3x"></i></a>
-				    				    	<br>
-
-				    				    	<a class = "social-link" href="https://www.facebook.com/kapil.krishnakumar"><i class="fa fa-facebook-square fa-3x"></i></a>
-											<br>
-				    				    	<a class = "social-link" href="https://github.com/krishnakumar-kapil"><i class="fa fa-github-square fa-3x"></i></a>
-				    				    </div>
-				    		    	</div>
-						    	</div>
-						    </div>
+					<div class="mdl-grid">
+				    	<div class = "mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-phone">
+		    				<div class="mdl-content-card mdl-card" id = "aboutMeCard">
+								<div class="mdl-card__title">
+								  <h2 class="mdl-card__title-text">About Me!</h2>
+								</div>
+		    				    <div class="mdl-card__supporting-text">
+		    				    	I am currently a sophomore majoring in Computer Science at the University of Texas at Austin. I am passionate about Software Development, especially in areas related to Full-Stack Development, Databases, Mobile Development, Machine Learning and Graphics.
+		    				    </div>
+		    		    	</div>
 				    	</div>
 
-			    </div>
-
-			    <div class ="mdl-cell mdl-cell--2-col"></div>
-				<div class ="mdl-cell mdl-cell--2-col"></div>
-
-			    <div class="mdl-cell mdl-cell--8-col page-content" id = "experience">
-				    <div class = "super-content-card mdl-card">
-
-				    	<h2 class = "contentHeader">Experience</h2> 
-
-						<div class = "mdl-grid">
-							
-							<div id = "employmentSears" class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
+				    	<div class = "mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--hide-phone">
+		    				<div class="mdl-content-card mdl-card">
 								<div class="mdl-card__title">
-								  <h2 class="mdl-card__title-text">Software Developer Intern at Sears Holdings</h2>
+								  <h2 class="mdl-card__title-text">Links</h2>
 								</div>
-								<img src = "./Assets/sears_logo.png" class = "logo"></img>
-								 
-								  <div class="mdl-card__supporting-text">
-									  	<ul>
-										    <li> Created a MVC Framework for RESTFul Web Services to assist the Core Search team in server management and analysis for the following web services using AngularJS and Java Spring.</li>
-										    <li>This helped the Core Search team in 15-20 % as they had a condensed set of applications for server management and improved debugging with analysis tools as well.</li>
-										    <li>Developed web service for managing server status and jobs running on servers.</li>
-										    <li>Built system for storage of Job Statistics using Java, Python, Cassandra and displaying of data after analysis using AngularJS and Google Visualization API.</li>
-										    <li>Developed a Report Generating Web Service for business element using Java and MySQL</li>
-										</ul>
-								  </div>
+		    				    <div class="mdl-card__supporting-text">
+		    				    	<a class = "social-link" href="https://www.linkedin.com/in/krishnakumarkapil"><i class="fa fa-linkedin-square fa-3x"></i></a>
+		    				    	<br>
 
-					    	</div>
-					    	<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
-							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">Graphic Design Intern at </h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-								Created posters for soccer tournament.
-							  </div>
-					    	</div>
-					    </div>
+		    				    	<a class = "social-link" href="https://www.facebook.com/kapil.krishnakumar"><i class="fa fa-facebook-square fa-3x"></i></a>
+									<br>
+		    				    	<a class = "social-link" href="https://github.com/krishnakumar-kapil"><i class="fa fa-github-square fa-3x"></i></a>
+		    				    </div>
+		    		    	</div>
+				    	</div>
 				    </div>
-				</div>
+		    	</div>
 
-				<div class ="mdl-cell mdl-cell--2-col"></div>
-				<div class ="mdl-cell mdl-cell--2-col"></div>
+		    </div>
 
-				 <div class="mdl-cell mdl-cell--8-col page-content" id = "skill">
-				 	<div class = "super-content-card mdl-card">
-				    	<h2 class = "contentHeader">Skills</h2> 
+		    <div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
+
+
+			<!-- Experience -->
+		    <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop page-content" id = "experience">
+			    <div class = "super-content-card mdl-card">
+
+			    	<h2 class = "contentHeader">Experience</h2> 
+
+					<div class = "mdl-grid">
 						
-						<div class = "mdl-grid">
+						<div id = "employmentSears" class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+							  <h2 class="mdl-card__title-text">Software Developer Intern at Sears Holdings</h2>
+							</div>
+							<img src = "./Assets/sears_logo.png" class = "logo"></img>
+							 
+							  <div class="mdl-card__supporting-text">
+								  	<ul>
+									    <li> Created a MVC Framework for RESTFul Web Services to assist the Core Search team in server management and analysis for the following web services using AngularJS and Java Spring.</li>
+									    <li>This helped the Core Search team in 15-20 % as they had a condensed set of applications for server management and improved debugging with analysis tools as well.</li>
+									    <li>Developed web service for managing server status and jobs running on servers.</li>
+									    <li>Built system for storage of Job Statistics using Java, Python, Cassandra and displaying of data after analysis using AngularJS and Google Visualization API.</li>
+									    <li>Developed a Report Generating Web Service for business element using Java and MySQL</li>
+									</ul>
+							  </div>
 
-							<div class="mdl-cell skill-grid mdl-grid">
-									<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-									  <div class="mdl-card__title">
-									    <h2 class="skill-title mdl-card__title-text">Java</h2>
-									  </div>
-									  <div class="mdl-card__supporting-text">
-										Proficient
-									  </div>
-							    	</div>
-							    	<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-									  <div class="mdl-card__title">
-									    <h2 class="skill-title mdl-card__title-text">Python</h2>
-									  </div>
-									  <div class="mdl-card__supporting-text">
-										Proficient
-									  </div>
-							    	</div>
-							    	<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-									  <div class="mdl-card__title">
-									    <h2 class="skill-title mdl-card__title-text">MySQL</h2>
-									  </div>
-									  <div class="mdl-card__supporting-text">
-										Expert
-									  </div>
-							    	</div>
-							    	<div class="mdl-skill-card mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
-									  <div class="mdl-card__title">
-									    <h2 class="skill-title mdl-card__title-text">JavaScript</h2>
-									  </div>
-									  <div class="mdl-card__supporting-text">
-										Proficient
-									  </div>
-							    	</div>
-					    	</div>
-					    </div>
-				   </div>
-				</div>
-				<div class ="mdl-cell mdl-cell--2-col page-content"></div>
-				<div class ="mdl-cell mdl-cell--2-col page-content"></div>
+				    	</div>
+				    	<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
+						  <div class="mdl-card__title">
+						    <h2 class="mdl-card__title-text">Graphic Design Intern at </h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+							Created posters for soccer tournament.
+						  </div>
+				    	</div>
+				    </div>
+			    </div>
+			</div>
 
-			    <div class="mdl-cell mdl-cell--8-col page-content" id = "projects"> 
-			    	<div class = "super-content-card mdl-card">
-				    	<h2 class = "contentHeader">Projects</h2>
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
 
-						<div class ="mdl-grid">
-								<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
-								<div class = "mdl-grid">	
-									<div class = "mdl-cell project" id = "breakTimePass">
-									  <div class="mdl-card__title">
-									    <h2 class="mdl-card__title-text"><a href= "https://chrome.google.com/webstore/detail/breaktimepass/pinhmfgenkdniafofjhnbkfcakegkmea">BreakTimePass</a></h2>
-									  </div>
-									  <div class="mdl-card__supporting-text">
-									    Keeps track of how long you spend on websites like facebook,etc. and shows the number of times you visit one!
-										<br>
-										<button id = "readMoreBreak" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-										  Read More!
-										</button>
-									    <div id = "displayMoreBreak">
-											Used ChartistJS, Material Design Lite, Chrome API's to create it.<br>
-											Get it over here: <a class = "social-link" href ="https://chrome.google.com/webstore/detail/breaktimepass/pinhmfgenkdniafofjhnbkfcakegkmea"><i class="fa fa-chrome fa-2x"></i></a>
-											<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/BreakTimePass"><i class="fa fa-github fa-2x"></i></a>
-									    </div>
-									  </div>
-									 </div>
-									  <div class ="mdl-cell project breakPic">
-									  	<img src = "Assets/breaktime.png">
-									  </div>
-								</div>
+			 <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop page-content" id = "skill">
+			 	<div class = "super-content-card mdl-card">
+			    	<h2 class = "contentHeader">Skills</h2> 
+
+					<div class="mdl-cell mdl-grid" id = "skillContainer">
+
+						<div class = "mdl-parentSkill-card mdl-cell mdl-cell--6-col mdl-card" >
+							<div class = "mdl-parentSkill__title"> 
+								Programming Skills
+							</div>
+							<div class = "mdl-grid">
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Java
+								  </div>
+								  <div class="mdl-card__supporting-text">
+								  	Proficient
+								  </div>
 						    	</div>
 
-				    		<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "railway">
-				    		  <div class="mdl-card__title">
-				    		    <h2 class="mdl-card__title-text">Railway Ticketing Model</h2>
-				    		  </div>
-				    		  <div class="mdl-card__supporting-text">
-				    		    Developed a ticketing system to re-create and analyse the Indian Ticketing system for possible improvements. 
-								<br>
-								<button id = "readMoreRailway" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-								  Read More!
-								</button>
-							    <div id = "displayMoreRailway">
-									Created using Java and MySQL using JDBC connector.
-									<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/Train-Reservation-Project"><i class="fa fa-github fa-2x"></i></a>
-							    </div>
-				    		    
-				    		  </div>
-				        	</div>	
-							<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "scamMusuem">
-							  <div class="mdl-card__title">
-							    <h2 class="mdl-card__title-text">Scam Museum</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    An Interactive Virtual Musuem Depicting the corruption that has afflicted India in which I was the programmer.
-							    
-						    	<br>
-						    	<button id = "readMoreMuseum" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-						    	  Read More!
-						    	</button>
-						        <div id = "displayMoreMuseum">
-						    		Created using ActionScript in Adobe Flash and Photoshop.
-						    		<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/Train-Reservation-Project"><i class="fa fa-github fa-2x"></i></a>
-						        </div>
-							  </div>
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Python
+								  </div>
+								  <div class="mdl-card__supporting-text">
+								  	Proficient
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    C
+								  </div>
+								  <div class="mdl-card__supporting-text">
+								  	Familiar
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Swift
+								  </div>
+								  <div class="mdl-card__supporting-text">
+								  	Familiar
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Objective C
+								  </div>
+								  <div class="mdl-card__supporting-text">
+								  	Exposure
+								  </div>
+						    	</div>
+							</div>
+						</div>
+
+						<div class = "mdl-parentSkill-card mdl-cell mdl-cell--6-col mdl-card" >
+							<div class = "mdl-parentSkill__title"> 
+								Web Development
+							</div>
+							<div class = "mdl-grid">
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    JavaScript
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>
+
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    AngularJS
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>
+
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    NodeJS
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>
+
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    JQuery
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>	    
+						    	
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    AJAX
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Gulp
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Familiar
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    HTML/CSS
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Expert
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    SASS
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>
+							</div>
+						</div>
+
+						<div class = "mdl-parentSkill-card mdl-cell mdl-cell--6-col mdl-card" >
+							<div class = "mdl-parentSkill__title"> 
+								Design
+							</div>
+							<div class = "mdl-grid">
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Photoshop
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Expert
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Flash + ActionScript
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Expert
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Photoshop
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Expert
+								  </div>
+						    	</div>	
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Illustrator
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Exposure
+								  </div>
+						    	</div>
+							</div>
+						</div>
+
+						<div class = "mdl-parentSkill-card mdl-cell mdl-cell--6-col mdl-card" >
+							<div class = "mdl-parentSkill__title"> 
+								Mobile
+							</div>
+							<div class = "mdl-grid">
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    iOS
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Familiar
+								  </div>
+						    	</div>
+
+						    	<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Android
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Exposure
+								  </div>
+						    	</div>
+							</div>
+						</div>
+
+						<div class = "mdl-parentSkill-card mdl-cell mdl-cell--6-col mdl-card" >
+							<div class = "mdl-parentSkill__title"> 
+								Other Technical Skills
+							</div>
+							<div class = "mdl-grid">
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    UNIX
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>
+							</div>
+
+							<div class = "mdl-grid">
+								<div class="mdl-skill-card mdl-cell mdl-card">
+								  <div class="mdl-card__title skill-title">
+								    Git
+								  </div>
+								  <div class="mdl-card__supporting-text">
+									Proficient
+								  </div>
+						    	</div>
+							</div>
+						</div>
+					</div>	
+			</div>
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
+			
+			<!-- PROJECTS -->
+		    <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop page-content" id = "projects"> 
+		    	<div class = "super-content-card mdl-card">
+			    	<h2 class = "contentHeader">Projects</h2>
+
+					<div class ="mdl-grid">
+							<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp">
+							<div class = "mdl-grid">	
+								<div class = "mdl-cell project" id = "breakTimePass">
+								  <div class="mdl-card__title">
+								    <h2 class="mdl-card__title-text"><a href= "https://chrome.google.com/webstore/detail/breaktimepass/pinhmfgenkdniafofjhnbkfcakegkmea">BreakTimePass</a></h2>
+								  </div>
+								  <div class="mdl-card__supporting-text">
+								    Keeps track of how long you spend on websites like facebook,etc. and shows the number of times you visit one!
+									<br>
+									<button id = "readMoreBreak" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+									  Read More!
+									</button>
+								    <div id = "displayMoreBreak">
+										Used ChartistJS, Material Design Lite, Chrome API's to create it.<br>
+										Get it over here: <a class = "social-link" href ="https://chrome.google.com/webstore/detail/breaktimepass/pinhmfgenkdniafofjhnbkfcakegkmea"><i class="fa fa-chrome fa-2x"></i></a>
+										<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/BreakTimePass"><i class="fa fa-github fa-2x"></i></a>
+								    </div>
+								  </div>
+								 </div>
+								  <div class ="mdl-cell project breakPic">
+								  	<img src = "Assets/breaktime.png">
+								  </div>
+							</div>
 					    	</div>
 
+			    		<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "railway">
+			    		  <div class="mdl-card__title">
+			    		    <h2 class="mdl-card__title-text">Railway Ticketing Model</h2>
+			    		  </div>
+			    		  <div class="mdl-card__supporting-text">
+			    		    Developed a ticketing system to re-create and analyse the Indian Ticketing system for possible improvements. 
+							<br>
+							<button id = "readMoreRailway" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+							  Read More!
+							</button>
+						    <div id = "displayMoreRailway">
+								Created using Java and MySQL using JDBC connector.
+								<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/Train-Reservation-Project"><i class="fa fa-github fa-2x"></i></a>
+						    </div>
+			    		    
+			    		  </div>
+			        	</div>	
+						<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "scamMusuem">
+						  <div class="mdl-card__title">
+						    <h2 class="mdl-card__title-text">Scam Museum</h2>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						    An Interactive Virtual Musuem Depicting the corruption that has afflicted India in which I was the programmer.
+						    
+					    	<br>
+					    	<button id = "readMoreMuseum" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+					    	  Read More!
+					    	</button>
+					        <div id = "displayMoreMuseum">
+					    		Created using ActionScript in Adobe Flash and Photoshop.
+					    		<br>See the code here: <a class = "social-link" href = "https://github.com/krishnakumar-kapil/Scam-Museum"><i class="fa fa-github fa-2x"></i></a>
+					        </div>
+						  </div>
+				    	</div>
 
-					    </div>
-					</div>
-			    </div>
 
-				<div class ="mdl-cell mdl-cell--2-col page-content"></div>
-				<div class ="mdl-cell mdl-cell--2-col page-content"></div>
+				    </div>
+				</div>
+		    </div>
 
-		        <div class="mdl-cell mdl-cell--8-col page-content" id = "contact"> 
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
+			<div class ="mdl-cell mdl-cell--2-col mdl-cell--2-col-desktop"></div>
 
-			        <div class = "super-content-card mdl-card">	
-			        	<h2 class = "contentHeader">Contact Me</h2>
+			<!-- Contacts -->
+	        <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop page-content" id = "contact"> 
 
-						<div class = "mdl-grid">
-				    		<div class="mdl-content-card mdl-card mdl-shadow--2dp">
-				    		  <div class="mdl-card__supporting-text">
-				    		    <form action="" method="POST">
-				    		      <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				    		        <input class="mdl-textfield__input" type="text" id="formName" />
-				    		        <label class="mdl-textfield__label" for="formName">Name</label>
-				    		      </div>
-				    		      <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-		  	    		        	<input class="mdl-textfield__input" type="text" id="formEmail" />
-		  	    		        	<label class="mdl-textfield__label" for="formEmail">Email</label>
-			    		          </div>
+		        <div class = "super-content-card mdl-card">	
+		        	<h2 class = "contentHeader">Contact Me</h2>
 
-			    		          <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-		  	    		            	<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" />
-		  	    		            	<label class="mdl-textfield__label" for="sample4">Phone Number</label>
-		  	    		            	<span class="mdl-textfield__error">Input is not a number!</span>
-		      		          	  </div>
+					<div class = "mdl-grid">
+			    		<div class="mdl-content-card mdl-card mdl-shadow--2dp">
+			    		  <div class="mdl-card__supporting-text">
+			    		    <form action="" method="POST">
+			    		      <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			    		        <input class="mdl-textfield__input" type="text" id="formName" />
+			    		        <label class="mdl-textfield__label" for="formName">Name</label>
+			    		      </div>
+			    		      <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	  	    		        	<input class="mdl-textfield__input" type="text" id="formEmail" />
+	  	    		        	<label class="mdl-textfield__label" for="formEmail">Email</label>
+		    		          </div>
 
-		      		          	  <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-		      		          	    <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
-		      		          	    <label class="mdl-textfield__label" for="message">Message...</label>
-		      		          	  </div>
+		    		          <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	  	    		            	<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" />
+	  	    		            	<label class="mdl-textfield__label" for="sample4">Phone Number</label>
+	  	    		            	<span class="mdl-textfield__error">Input is not a number!</span>
+	      		          	  </div>
 
-								  <div class = "form-button"></div>
-		      		          	  <!-- Accent-colored raised button with ripple -->
-		      		          	  <input type = "submit" value = "send" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-		      		          	  </button>
-				    		    </form>
-				    		  </div>
-				        	</div>
-				        </div>
-					</div>
-		        </div>
+	      		          	  <div class="form-element mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+	      		          	    <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
+	      		          	    <label class="mdl-textfield__label" for="message">Message...</label>
+	      		          	  </div>
+
+							  <div class = "form-button"></div>
+	      		          	  <!-- Accent-colored raised button with ripple -->
+	      		          	  <input type = "submit" value = "send" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+	      		          	  </button>
+			    		    </form>
+			    		  </div>
+			        	</div>
+			        </div>
+				</div>
+	        </div>
 
 		</div>
 

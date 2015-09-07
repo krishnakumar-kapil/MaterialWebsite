@@ -20,6 +20,9 @@ $break-small: 320px;
 $break-tablet: 768px;
 $break-desktop: 1224px;
 
+$skill-border-radius: 7px;
+$skill-padding: .75em;
+
 body {
 	color: black;
 	font-family: 100% $font-stack;
@@ -131,7 +134,8 @@ body {
 
 .contentHeader{
 	font-weight: thin;
-	text-align: center;
+	text-align: left;
+	padding-left: .5em;
 	margin-bottom: .25em;
 }
 
@@ -152,13 +156,32 @@ body {
 	}
 }
 
-.skill-grid{
-	.mdl-skill-card{
-		max-height: 100px;
-		min-width: 100%;
-		
-		.mdl-card-title{
-			text-align: center;
+#skillContainer{
+	width: 100%;
+	.mdl-parentSkill-card{
+		@include shadow-2dp();
+		border-radius: $skill-border-radius;
+
+		.mdl-parentSkill__title{
+			margin-left: .25em;
+		}
+
+		.mdl-grid{
+			.mdl-card{
+				min-height: auto;
+			}
+
+			.mdl-skill-card{
+				@include shadow-2dp();
+				min-width: 100%;
+				border-radius: $skill-border-radius;
+				
+				.mdl-card__title{
+					padding: .25em .25em .25em $skill-padding ;
+
+					text-align: center;
+				}
+			}
 		}
 	}
 }
