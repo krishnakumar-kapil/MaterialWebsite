@@ -48,7 +48,7 @@ body {
       color: #E65100; }
 
 .super-content-card.mdl-card {
-  width: 100%;
+  min-width: 100%;
   background-color: #4CAF50;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
@@ -98,12 +98,13 @@ body {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     border-radius: 7px; }
     #skillContainer .mdl-parentSkill-card .mdl-parentSkill__title {
-      margin-left: .25em; }
+      margin-left: .5em;
+      margin-top: .5em;
+      font-size: 1.5em; }
     #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-card {
       min-height: auto; }
     #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card {
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-      min-width: 100%;
       border-radius: 7px; }
       #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card .mdl-card__title {
         padding: 0.25em 0.25em 0.25em 0.75em;

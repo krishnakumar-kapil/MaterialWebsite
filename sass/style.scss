@@ -90,7 +90,7 @@ body {
 }
 
 .super-content-card.mdl-card{
-	width: 100%;
+	min-width: 100%;
 	background-color: $card-super-background;
 	@include shadow-2dp();
 
@@ -120,8 +120,7 @@ body {
 			margin: .25em .25em .25em .25em;
 			&:hover {
 			   color: $accent-color;
-
-			 }
+			}
 		}
 	}
 
@@ -163,22 +162,21 @@ body {
 		border-radius: $skill-border-radius;
 
 		.mdl-parentSkill__title{
-			margin-left: .25em;
+			margin-left: .5em;
+			margin-top: .5em;
+			font-size: $font-size + .5;
 		}
 
 		.mdl-grid{
 			.mdl-card{
 				min-height: auto;
 			}
-
 			.mdl-skill-card{
 				@include shadow-2dp();
-				min-width: 100%;
 				border-radius: $skill-border-radius;
 				
 				.mdl-card__title{
-					padding: .25em .25em .25em $skill-padding ;
-
+					padding: .25em .25em .25em $skill-padding;
 					text-align: center;
 				}
 			}
