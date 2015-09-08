@@ -90,7 +90,7 @@ body {
 }
 
 .super-content-card.mdl-card{
-	min-width: 100%;
+	width: 100%;
 	background-color: $card-super-background;
 	@include shadow-2dp();
 
@@ -158,6 +158,7 @@ body {
 #skillContainer{
 	width: 100%;
 	.mdl-parentSkill-card{
+		background-color: $body-background;
 		@include shadow-2dp();
 		border-radius: $skill-border-radius;
 
@@ -173,6 +174,7 @@ body {
 			}
 			.mdl-skill-card{
 				@include shadow-2dp();
+				min-width: 2.5em;
 				border-radius: $skill-border-radius;
 				
 				.mdl-card__title{
