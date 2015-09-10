@@ -104,13 +104,18 @@ body {
       font-size: 1.5em; }
     #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-card {
       min-height: auto; }
-    #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card {
+    #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell {
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-      min-width: 2.5em;
+      min-width: 4em;
       border-radius: 7px; }
-      #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card .mdl-card__title {
-        padding: 0.25em 0.25em 0.25em 0.75em;
+      #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell .mdl-card__title {
+        padding: 0.25em 0.25em 0.25em 0.5em;
         text-align: center; }
+      #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell .mdl-card__supporting-text {
+        padding: 0.25em 0.25em 0.25em 0.5em; }
+      #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell:hover {
+        background-color: #E0E0E0;
+        /*background-color: $primary-dark;*/ }
 
 #aboutMeCard .mdl-card__title {
   color: #E65100;

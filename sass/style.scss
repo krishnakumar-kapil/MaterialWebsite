@@ -21,7 +21,7 @@ $break-tablet: 768px;
 $break-desktop: 1224px;
 
 $skill-border-radius: 7px;
-$skill-padding: .75em;
+$skill-padding: .5em;
 
 body {
 	color: black;
@@ -172,15 +172,24 @@ body {
 			.mdl-card{
 				min-height: auto;
 			}
-			.mdl-skill-card{
+			.mdl-skill-card.mdl-cell{
 				@include shadow-2dp();
-				min-width: 2.5em;
+				min-width: 4em;
 				border-radius: $skill-border-radius;
+
 				
 				.mdl-card__title{
 					padding: .25em .25em .25em $skill-padding;
 					text-align: center;
 				}
+				.mdl-card__supporting-text{
+					padding: .25em .25em .25em .5em;
+				}
+
+				&:hover {
+				   background-color: $body-background;
+				   /*background-color: $primary-dark;*/
+			 	}
 			}
 		}
 	}
