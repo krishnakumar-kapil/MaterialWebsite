@@ -8,6 +8,7 @@ $(document).ready(function() {
 	toggle('#readMoreBreak', "#displayMoreBreak");
 	toggle('#readMoreRailway', "#displayMoreRailway");
 	toggle('#readMoreMuseum', '#displayMoreMuseum');
+	toggle('#readMoreHuffman', '#displayMoreHuffman');
 
 	addColorSkill();
 });
@@ -27,8 +28,6 @@ function addColorSkill(){
 	$(skillCard).each(function(){
 
 		var level = $(this).children('div.mdl-card__supporting-text').text().trim();
-		console.log(level);
-		console.log(colorSkill[level]);
 		$(this).css('background-color', colorSkill[level]);
 		// console.log(level);
 	});

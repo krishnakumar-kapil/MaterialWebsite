@@ -9,9 +9,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
-	
-	 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue-green.min.css" /> 
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.green-blue.min.css" /> 
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
 
@@ -33,7 +32,7 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only mdl-js-ripple-effect ">
-        <a class="mdl-navigation__link" href="#about">ABOUT</a>
+        <a class="mdl-navigation__link active" href="#about">ABOUT</a>
         <a class="mdl-navigation__link" href="#experience">EXPERIENCE</a>
         <a class="mdl-navigation__link" href="#skill">SKILLS</a>
         <a class="mdl-navigation__link" href="#projects">PROJECTS</a>
@@ -116,7 +115,7 @@
 							<div class="mdl-card__title">
 							  <h2 class="mdl-card__title-text">Software Developer Intern at Sears Holdings</h2>
 							</div>
-							<img src = "./Assets/sears_logo.png" class = "logo"></img>
+							<img src = "./Assets/sears_logo.png" class = "logo mdl-cell--hide-phone"></img>
 							 
 							  <div class="mdl-card__supporting-text">
 								  	<ul>
@@ -391,7 +390,7 @@
 							<div class = "mdl-grid">	
 								<div class = "mdl-cell project" id = "breakTimePass">
 								  <div class="mdl-card__title">
-								    <h2 class="mdl-card__title-text"><a href= "https://chrome.google.com/webstore/detail/breaktimepass/pinhmfgenkdniafofjhnbkfcakegkmea">BreakTimePass</a></h2>
+								    <h2 class="mdl-card__title-text">BreakTimePass</a></h2>
 								  </div>
 								  <div class="mdl-card__supporting-text">
 								    Keeps track of how long you spend on websites like facebook,etc. and shows the number of times you visit one!
@@ -447,6 +446,35 @@
 						  </div>
 				    	</div>
 
+		    			<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "huffmanCoding">
+		    			  <div class="mdl-card__title">
+		    			    <h2 class="mdl-card__title-text">Huffman Encoding</h2>
+		    			  </div>
+		    			  <div class="mdl-card__supporting-text">
+		    			    A encoding algorithm that uses a process of encoding similar characters with a single representation of that character and the number of times it is repeated.
+		    			    Implemented both the encoder and decoder.
+		    			    
+		    		    	<br>
+		    		    	<button id = "readMoreHuffman" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+		    		    	  Read More!
+		    		    	</button>
+		    		        <div id = "displayMoreHuffman">
+		    		    		Created using Java.
+		    		    		Data Structures used: Priority Queue, Binary Tree.
+
+		    		        </div>
+		    			  </div>
+		    	    	</div>
+
+    	    			<div class="mdl-cell mdl-content-card mdl-card mdl-shadow--2dp" id = "websiteProject">
+    	    			  <div class="mdl-card__title">
+    	    			    <h2 class="mdl-card__title-text">Website</h2>
+    	    			  </div>
+    	    			  <div class="mdl-card__supporting-text">
+    	    			    Created this website from scratch using Material Design and MD Lite.
+    	    			    Technology Used: HTML, CSS, Sass, Gulp, JavaScript, JQuery.
+    	    			  </div>
+    	    	    	</div>
 
 				    </div>
 				</div>

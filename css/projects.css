@@ -1,13 +1,15 @@
-#breakTimePass .mdl-card__supporting-text #displayMoreBreak {
-  display: none; }
-
-#breakTimePass .mdl-card__supporting-text #readMoreBreak {
-  margin: 0 auto;
-  text-align: center; }
+#breakTimePass {
+  min-height: 0em; }
+  #breakTimePass .mdl-card__supporting-text #displayMoreBreak {
+    display: none; }
+  #breakTimePass .mdl-card__supporting-text #readMoreBreak {
+    margin: 0 auto;
+    text-align: center; }
 
 #railway {
   padding-left: 1em;
-  padding-top: 1em; }
+  padding-top: 1em;
+  min-height: 0em; }
   #railway .mdl-card__supporting-text #displayMoreRailway {
     display: none; }
   #railway .mdl-card__supporting-text #readMoreRailway {
@@ -16,9 +18,26 @@
 
 #scamMusuem {
   padding-left: 1em;
-  padding-top: 1em; }
+  padding-top: 1em;
+  min-height: 0em; }
   #scamMusuem .mdl-card__supporting-text #displayMoreMuseum {
     display: none; }
   #scamMusuem .mdl-card__supporting-text #readMoreMuseum {
     margin: 0 auto;
     text-align: center; }
+
+#huffmanCoding {
+  padding-left: 1em;
+  padding-top: 1em;
+  min-height: 0em; }
+  #huffmanCoding .mdl-card__supporting-text #displayMoreHuffman {
+    display: none; }
+  #huffmanCoding .mdl-card__supporting-text #readMoreHuffman {
+    margin: 0 auto;
+    text-align: center; }
+
+#websiteProject {
+  padding-left: 1em;
+  padding-top: 1em;
+  height: auto;
+  min-height: 0em; }

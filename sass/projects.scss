@@ -10,6 +10,7 @@
 			text-align: center;
 		}
 	}
+	min-height: 0em;
 }
 
 #railway{
@@ -24,6 +25,7 @@
 			text-align: center;
 		}
 	}
+	min-height: 0em;
 }
 
 #scamMusuem{
@@ -38,5 +40,28 @@
 			text-align: center;
 		}
 	}
+	min-height: 0em;
+}
+
+#huffmanCoding{
+	padding-left: 1em;
+	padding-top: 1em;
+	.mdl-card__supporting-text{	
+		#displayMoreHuffman{
+			display:none;
+		}
+		#readMoreHuffman{
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	min-height: 0em;
+}
+
+#websiteProject{
+	padding-left: 1em;
+	padding-top: 1em;
+	height: auto;
+	min-height: 0em;
 }
 

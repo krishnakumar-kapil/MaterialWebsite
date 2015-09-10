@@ -29,6 +29,10 @@ body {
  	background-color: $body-background;
 }
 
+a{
+	color: $primary-color;
+}
+
 
 .mdl-layout{
 	.mdl-layout__header{
@@ -71,8 +75,12 @@ body {
 				   /*background-color: $primary-dark;*/
 			 	}
 			 	&:active{
-			 		background-color: $primary-dark;
-			 	}
+			 		border-bottom: solid 5px $accent-color;
+			 	}			 	
+			}
+
+			.active{
+		 		border-bottom: solid 5px $accent-color;
 			}
 		}
 	}
@@ -102,13 +110,6 @@ body {
 	text-align: left;
 	@include shadow-4dp();
 
-	.mdl-card__title {
-		text-align: center;
-		a{
-			color: $accent-color;
-		}
-	}
-
 	.mdl-card__supporting-text {
 		padding-top: .5em;
 		text-align: left;
@@ -128,6 +129,10 @@ body {
 		text-align: center;
 		padding-bottom: .25em;
 		padding-top: .5em;
+		text-align: center;
+		a{
+			/*color: $accent-color;*/
+		}
 	}
 }
 
@@ -197,7 +202,7 @@ body {
 
 #aboutMeCard{
 	.mdl-card__title{
-		color: $accent-color;
+		/*color: $accent-color;*/
 		height: 200px;
 		background: url(../Assets/uttower.jpg) center bottom;
 	}
@@ -215,10 +220,13 @@ body {
 		-webkit-transition:$hover-time;
 		/* ...and now for the proper property */
 		transition:$hover-time;
-		color: black;
+		/*color: black;*/
 	}
 	.mdl-card__supporting-text{
 		padding-top:.25em;
+		ul{
+			padding-left: 1em;
+		}
 	}
 }
 
