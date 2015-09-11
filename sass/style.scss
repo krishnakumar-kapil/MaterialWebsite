@@ -34,6 +34,17 @@ $nav-shadow: .15em;
   }
 }
 
+@mixin buttonColor(){
+	color: set-notification-text-color($accent-color);
+
+	background-color: black;
+	&:hover{
+		color: set-notification-text-color($accent-color);
+		background-color: $accent-color;
+		@include shadow-4dp();
+	}
+}
+
 body {
 	color: black;
 	font-family: 100% $font-stack;
@@ -275,13 +286,7 @@ img {
 		margin-top: .5em;
 		margin-bottom: 1em;
 		button{
-			color: set-notification-text-color($accent-color);
-
-			background-color: $accent-color;
-			&:hover{
-				background-color: $accent-dark;
-				@include shadow-4dp();
-			}
+			@include buttonColor();
 		}
 	}
 }
@@ -324,7 +329,7 @@ form{
 	}
 
 	.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
-		background-color: $accent-color;
+		@include buttonColor();
 	}
 }
 
