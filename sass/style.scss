@@ -3,6 +3,8 @@
 $hover-time: .25s;
 
 $font-stack: Roboto, Helvetica, sans-serif;
+$font-weight: 300;
+$font-weight-thick: 350;
 $primary-color: #4CAF50;
 $primary-dark: #2E7D32;
 
@@ -63,6 +65,7 @@ body {
 	color: black;
 	font-family: 100% $font-stack;
  	background-color: $body-background;
+ 	font-weight: $font-weight;
 }
 
 a{
@@ -80,7 +83,10 @@ img {
 		color: $header-color;
 		.mdl-layout-title{
 			font-size: $font-size + 1;
-			font-weight: thin;
+			font-weight: $font-weight;
+			span{
+				font-weight: $font-weight-thick;
+			}
 		}
 
 		.mdl-layout__drawer-button{
@@ -103,6 +109,7 @@ img {
 			text-align: center;
 			.mdl-navigation__link{
 				color: $header-color;
+				font-weight: $font-weight;
 				font-size: $font-size+.25;
 				-o-transition:$hover-time;
 				-ms-transition:$hover-time;
@@ -170,7 +177,13 @@ img {
 	width: 100%;
 	background-color: $card-super-background;
 	@include shadow-2dp();
-
+	font-weight: $font-weight;
+	.contentHeader{
+		font-weight: $font-weight;
+		text-align: left;
+		padding-left: .5em;
+		margin-bottom: .25em;
+	}
 }
 
 .mdl-content-card.mdl-card{
@@ -193,6 +206,7 @@ img {
 	}
 
 	.mdl-card__title{
+		font-weight: $font-weight;
 		text-align: center;
 		padding-bottom: .25em;
 		padding-top: .5em;
@@ -203,12 +217,7 @@ img {
 	}
 }
 
-.contentHeader{
-	font-weight: thin;
-	text-align: left;
-	padding-left: .5em;
-	margin-bottom: .25em;
-}
+
 
 .mdl-grid{
 	width: auto;
@@ -239,9 +248,11 @@ img {
 		border-radius: $skill-border-radius;
 
 		.mdl-parentSkill__title{
+
 			margin-left: .5em;
 			margin-top: .5em;
 			font-size: $font-size + .5;
+			font-weight: $font-weight;
 		}
 
 		.mdl-grid{
