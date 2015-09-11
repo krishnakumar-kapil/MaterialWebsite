@@ -160,6 +160,20 @@ img {
   height: 200px;
   background: url(../Assets/uttower.jpg) center bottom; }
 
+#aboutMeCard .mdl-card__supporting-text {
+  padding-bottom: 0em; }
+
+#aboutMeCard #resumeLink {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: 1em; }
+  #aboutMeCard #resumeLink button {
+    color: #ffffff;
+    background-color: #E65100; }
+    #aboutMeCard #resumeLink button:hover {
+      background-color: #E65100;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+
 #employmentSears .logo {
   height: 200px; }
 
@@ -191,8 +205,10 @@ form {
 
 .profilePic {
   border-radius: 50%;
-  margin-top: .5em;
-  margin-left: .5em;
-  margin-right: .5em;
-  height: 100%;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  height: 6em;
+  width: 6em;
   max-width: 100%; }

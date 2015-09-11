@@ -26,6 +26,14 @@ $skill-text-color: black;
 
 $nav-shadow: .15em;
 
+@function set-notification-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
 body {
 	color: black;
 	font-family: 100% $font-stack;
@@ -162,7 +170,7 @@ img {
 
 		.social-link{
 			color: black;
-			margin: .25em .25em .25em .25em;
+			margin: .25em .25em .25em .25em;			
 			-o-transition:$hover-time;
 			-ms-transition:$hover-time;
 			-moz-transition:$hover-time;
@@ -257,7 +265,28 @@ img {
 		height: 200px;
 		background: url(../Assets/uttower.jpg) center bottom;
 	}
+
+	.mdl-card__supporting-text{
+		padding-bottom: 0em;
+	}
+
+	#resumeLink{
+		text-align: center;
+		margin-top: .5em;
+		margin-bottom: 1em;
+		button{
+			color: set-notification-text-color($accent-color);
+
+			background-color: $accent-color;
+			&:hover{
+				background-color: $accent-dark;
+				@include shadow-4dp();
+			}
+		}
+	}
 }
+
+
 
 #employmentSears{
 	.logo{
@@ -301,10 +330,11 @@ form{
 
 .profilePic{
 	border-radius: 50%;
-	margin-top: .5em;
-	margin-left: .5em;
-	margin-right: .5em;
-	@import shadow-2dp();
-	height: 100%;
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	@include shadow-4dp();
+	height: 6em;
+	width: 6em;
 	max-width: 100%;
 }

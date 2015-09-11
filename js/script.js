@@ -59,3 +59,9 @@ function changeActive(){
 	  $(this).toggleClass('active', $(this).attr('href') == loc);
 	});
 }
+
+function resumeButton(){
+	// $('#resumeButton').on('click',function(){
+
+	// });
+}

@@ -27,7 +27,7 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
 
-      <img src = "Assets/KapilPic.png" class = "profilePic"></img>
+      <img src = "Assets/KapilPic.png" class = "profilePic mdl-cell--hide-phone"></img>
       <!-- Title -->
       <span class="mdl-layout-title">Kapil Krishnakumar</span>
       <!-- Add spacer, to align navigation to the right -->
@@ -43,6 +43,8 @@
     </div>
   </header>
   <div class="mdl-layout__drawer" id = "sideDrawer">
+  	<img src = "Assets/KapilPic.png" class = "profilePic"></img>
+
     <span class="mdl-layout-title">Kapil Krishnakumar</span>
     <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="#about">About</a>
@@ -77,7 +79,15 @@
 								</div>
 		    				    <div class="mdl-card__supporting-text">
 		    				    	I am currently a sophomore majoring in Computer Science at the University of Texas at Austin. I am passionate about Software Development, especially in areas related to Full-Stack Development, Databases, Mobile Development, Machine Learning and Graphics.
+		    				    
 		    				    </div>
+
+								<div id = "resumeLink">
+									<button target = "_blank"id = "resumeButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+										onclick="window.open('https://drive.google.com/open?id=0B1w9Gbsgnz7kWHE2SldLWWh4OWM')">
+									  Resume
+									</button>
+								</div>
 		    		    	</div>
 				    	</div>
 
@@ -524,9 +534,7 @@
 			        </div>
 				</div>
 	        </div>
-
 		</div>
-
   </main>
 </div>
 
