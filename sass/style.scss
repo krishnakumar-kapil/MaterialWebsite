@@ -164,6 +164,7 @@ img {
 		}
 		.nav-bar-social{
 			margin: auto;
+			text-align: center;
 			a{
 				@include socialLink();
 			}
