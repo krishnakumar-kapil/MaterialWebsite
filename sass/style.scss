@@ -28,9 +28,9 @@ $nav-shadow: .15em;
 
 @function set-notification-text-color($color) {
   @if (lightness($color) > 50) {
-    @return #000000; // Lighter backgorund, return dark color
+    @return rgba(0,0,0,.7); // Lighter backgorund, return dark color
   } @else {
-    @return #ffffff; // Darker background, return light color
+    @return rgba(255,255,255,.8);; // Darker background, return light color
   }
 }
 
@@ -43,6 +43,20 @@ $nav-shadow: .15em;
 		background-color: $accent-color;
 		@include shadow-4dp();
 	}
+}
+
+@mixin socialLink(){
+		-o-transition:$hover-time;
+		-ms-transition:$hover-time;
+		-moz-transition:$hover-time;
+		-webkit-transition:$hover-time;
+		/* ...and now for the proper property */
+		transition:$hover-time;
+		color: black;
+
+		&:hover{
+			color: $accent-color;
+		}
 }
 
 body {
@@ -98,6 +112,7 @@ img {
 				transition:$hover-time;
 				&:hover {
 				   background-color: $primary-dark;
+				   color: set-notification-text-color($primary-dark);
 				   border-bottom: solid 5px $accent-color;
 			 		-moz-box-shadow:    inset 0 0 $nav-shadow #000000;
 				   -webkit-box-shadow: inset 0 0 $nav-shadow #000000;
@@ -118,6 +133,9 @@ img {
 
 #sideDrawer{
 	background-color: $body-background;
+	.profilePic{
+		margin: 1em auto;
+	}
 	.mdl-navigation{
 		.mdl-navigation__link{
 			color: black;
@@ -140,17 +158,7 @@ img {
 		.nav-bar-social{
 			margin: auto;
 			a{
-				-o-transition:$hover-time;
-				-ms-transition:$hover-time;
-				-moz-transition:$hover-time;
-				-webkit-transition:$hover-time;
-				/* ...and now for the proper property */
-				transition:$hover-time;
-				color: black;
-
-				&:hover{
-					color: $primary-dark;
-				}
+				@include socialLink();
 			}
 		}
 	}
@@ -180,17 +188,7 @@ img {
 		line-height: 1.50em;
 
 		.social-link{
-			color: black;
-			margin: .25em .25em .25em .25em;			
-			-o-transition:$hover-time;
-			-ms-transition:$hover-time;
-			-moz-transition:$hover-time;
-			-webkit-transition:$hover-time;
-			/* ...and now for the proper property */
-			transition:$hover-time;
-			&:hover {
-			   color: $accent-color;
-			}
+			@include socialLink();
 		}
 	}
 
@@ -214,17 +212,21 @@ img {
 
 .mdl-grid{
 	width: auto;
-	.projectLink{
-		&:hover{
-		}
-	}
 	.mdl-cell{
 		margin: .5em .5em .5em .5em;
-		.project{
-			width: 47%;
-			.breakpic{
-				margin: auto;
-			}
+	}
+}
+
+.project{
+	width: 47%;
+	.breakpic{
+		margin: auto;
+	}
+
+	.mdl-card__supporting-text{
+
+		button{
+			@include buttonColor();
 		}
 	}
 }
@@ -335,7 +337,7 @@ form{
 
 .profilePic{
 	border-radius: 50%;
-	margin-top: 2em;
+	margin-top: 2.5em;
 	margin-left: 1em;
 	margin-right: 1em;
 	@include shadow-4dp();

@@ -42,6 +42,7 @@ img {
       transition: 0.25s; }
       .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
         background-color: #2E7D32;
+        color: rgba(255, 255, 255, 0.8);
         border-bottom: solid 5px #E65100;
         -moz-box-shadow: inset 0 0 0.15em #000000;
         -webkit-box-shadow: inset 0 0 0.15em #000000;
@@ -51,6 +52,8 @@ img {
 
 #sideDrawer {
   background-color: #E0E0E0; }
+  #sideDrawer .profilePic {
+    margin: 1em auto; }
   #sideDrawer .mdl-navigation .mdl-navigation__link {
     color: black;
     -o-transition: 0.25s;
@@ -76,7 +79,7 @@ img {
       transition: 0.25s;
       color: black; }
       #sideDrawer .mdl-navigation .nav-bar-social a:hover {
-        color: #2E7D32; }
+        color: #E65100; }
 
 .super-content-card.mdl-card {
   width: 100%;
@@ -96,14 +99,13 @@ img {
     font-size: 1em;
     line-height: 1.50em; }
     .mdl-content-card.mdl-card .mdl-card__supporting-text .social-link {
-      color: black;
-      margin: 0.25em 0.25em 0.25em 0.25em;
       -o-transition: 0.25s;
       -ms-transition: 0.25s;
       -moz-transition: 0.25s;
       -webkit-transition: 0.25s;
       /* ...and now for the proper property */
-      transition: 0.25s; }
+      transition: 0.25s;
+      color: black; }
       .mdl-content-card.mdl-card .mdl-card__supporting-text .social-link:hover {
         color: #E65100; }
   .mdl-content-card.mdl-card .mdl-card__title {
@@ -124,10 +126,18 @@ img {
   width: auto; }
   .mdl-grid .mdl-cell {
     margin: 0.5em 0.5em 0.5em 0.5em; }
-    .mdl-grid .mdl-cell .project {
-      width: 47%; }
-      .mdl-grid .mdl-cell .project .breakpic {
-        margin: auto; }
+
+.project {
+  width: 47%; }
+  .project .breakpic {
+    margin: auto; }
+  .project .mdl-card__supporting-text button {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: black; }
+    .project .mdl-card__supporting-text button:hover {
+      color: rgba(255, 255, 255, 0.8);
+      background-color: #E65100;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
 #skillContainer {
   width: 100%; }
@@ -168,10 +178,10 @@ img {
   margin-top: .5em;
   margin-bottom: 1em; }
   #aboutMeCard #resumeLink button {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
     background-color: black; }
     #aboutMeCard #resumeLink button:hover {
-      color: #ffffff;
+      color: rgba(255, 255, 255, 0.8);
       background-color: #E65100;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
@@ -202,16 +212,16 @@ form {
   form form-button {
     margin: auto; }
   form .mdl-button--accent.mdl-button--accent.mdl-button--raised, form .mdl-button--accent.mdl-button--accent.mdl-button--fab {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
     background-color: black; }
     form .mdl-button--accent.mdl-button--accent.mdl-button--raised:hover, form .mdl-button--accent.mdl-button--accent.mdl-button--fab:hover {
-      color: #ffffff;
+      color: rgba(255, 255, 255, 0.8);
       background-color: #E65100;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
 .profilePic {
   border-radius: 50%;
-  margin-top: 2em;
+  margin-top: 2.5em;
   margin-left: 1em;
   margin-right: 1em;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
