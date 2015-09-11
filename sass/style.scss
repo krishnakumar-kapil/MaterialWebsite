@@ -4,7 +4,7 @@ $hover-time: .25s;
 
 $font-stack: Roboto, Helvetica, sans-serif;
 $primary-color: #4CAF50;
-$primary-dark: #01579B;
+$primary-dark: #2E7D32;
 
 
 $accent-color:#E65100;
@@ -22,6 +22,9 @@ $break-desktop: 1224px;
 
 $skill-border-radius: 7px;
 $skill-padding: .5em;
+$skill-text-color: black;
+
+$nav-shadow: .15em;
 
 body {
 	color: black;
@@ -71,11 +74,15 @@ a{
 				/* ...and now for the proper property */
 				transition:$hover-time;
 				&:hover {
-				   color: $accent-dark;
-				   /*background-color: $primary-dark;*/
+				   background-color: $primary-dark;
+				   border-bottom: solid 5px $accent-color;
+			 		-moz-box-shadow:    inset 0 0 $nav-shadow #000000;
+				   -webkit-box-shadow: inset 0 0 $nav-shadow #000000;
+				   box-shadow:         inset 0 0 $nav-shadow #000000;
+				   
 			 	}
 			 	&:active{
-			 		border-bottom: solid 5px $accent-color;
+			 		
 			 	}			 	
 			}
 
@@ -86,16 +93,39 @@ a{
 	}
 }
 
-.nav-bar-social{
-	margin: auto;
-	a{
-		color: black;
+#sideDrawer{
+	background-color: $body-background;
+	.mdl-navigation{
+		-o-transition:$hover-time;
+		-ms-transition:$hover-time;
+		-moz-transition:$hover-time;
+		-webkit-transition:$hover-time;
+		/* ...and now for the proper property */
+		transition:$hover-time;
+		.mdl-navigation__link{
+			color: black;
+			&:hover{
+				color: white;
+				background-color: $primary-dark;
+		 		-moz-box-shadow:    inset 0 0 $nav-shadow #000000;
+			   -webkit-box-shadow: inset 0 0 $nav-shadow #000000;
+			   box-shadow:         inset 0 0 $nav-shadow #000000;
+			}
+		}
+		.nav-bar-social{
+			margin: auto;
+			a{
+				color: black;
 
-		&:hover{
-			color: $accent-color;
+				&:hover{
+					color: $primary-dark;
+				}
+			}
 		}
 	}
 }
+
+
 
 .super-content-card.mdl-card{
 	width: 100%;
@@ -103,10 +133,12 @@ a{
 	@include shadow-2dp();
 
 }
+
 .mdl-content-card.mdl-card{
 	background-color: $body-background;
 	width: 100%;
 	margin: auto;
+	min-height: 0em;
 	text-align: left;
 	@include shadow-4dp();
 
@@ -119,6 +151,12 @@ a{
 		.social-link{
 			color: black;
 			margin: .25em .25em .25em .25em;
+			-o-transition:$hover-time;
+			-ms-transition:$hover-time;
+			-moz-transition:$hover-time;
+			-webkit-transition:$hover-time;
+			/* ...and now for the proper property */
+			transition:$hover-time;
 			&:hover {
 			   color: $accent-color;
 			}
@@ -175,19 +213,20 @@ a{
 
 		.mdl-grid{
 			.mdl-card{
-				min-height: auto;
+				min-height: 0em;
 			}
 			.mdl-skill-card.mdl-cell{
 				@include shadow-2dp();
-				min-width: 4em;
+				min-width: 5em;
 				border-radius: $skill-border-radius;
 
 				
 				.mdl-card__title{
+					color: $skill-text-color;
 					padding: .25em .25em .25em $skill-padding;
-					text-align: center;
 				}
 				.mdl-card__supporting-text{
+					color: $skill-text-color;
 					padding: .25em .25em .25em .5em;
 				}
 

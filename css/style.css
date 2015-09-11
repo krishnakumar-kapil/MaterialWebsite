@@ -38,19 +38,37 @@ a {
       /* ...and now for the proper property */
       transition: 0.25s; }
       .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:hover {
-        color: #E65100;
-        /*background-color: $primary-dark;*/ }
-      .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link:active {
-        border-bottom: solid 5px #E65100; }
+        background-color: #2E7D32;
+        border-bottom: solid 5px #E65100;
+        -moz-box-shadow: inset 0 0 0.15em #000000;
+        -webkit-box-shadow: inset 0 0 0.15em #000000;
+        box-shadow: inset 0 0 0.15em #000000; }
     .mdl-layout .mdl-layout__header .mdl-navigation .active {
       border-bottom: solid 5px #E65100; }
 
-.nav-bar-social {
-  margin: auto; }
-  .nav-bar-social a {
-    color: black; }
-    .nav-bar-social a:hover {
-      color: #E65100; }
+#sideDrawer {
+  background-color: #E0E0E0; }
+  #sideDrawer .mdl-navigation {
+    -o-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -webkit-transition: 0.25s;
+    /* ...and now for the proper property */
+    transition: 0.25s; }
+    #sideDrawer .mdl-navigation .mdl-navigation__link {
+      color: black; }
+      #sideDrawer .mdl-navigation .mdl-navigation__link:hover {
+        color: white;
+        background-color: #2E7D32;
+        -moz-box-shadow: inset 0 0 0.15em #000000;
+        -webkit-box-shadow: inset 0 0 0.15em #000000;
+        box-shadow: inset 0 0 0.15em #000000; }
+    #sideDrawer .mdl-navigation .nav-bar-social {
+      margin: auto; }
+      #sideDrawer .mdl-navigation .nav-bar-social a {
+        color: black; }
+        #sideDrawer .mdl-navigation .nav-bar-social a:hover {
+          color: #2E7D32; }
 
 .super-content-card.mdl-card {
   width: 100%;
@@ -61,6 +79,7 @@ a {
   background-color: #E0E0E0;
   width: 100%;
   margin: auto;
+  min-height: 0em;
   text-align: left;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
   .mdl-content-card.mdl-card .mdl-card__supporting-text {
@@ -70,7 +89,13 @@ a {
     line-height: 1.50em; }
     .mdl-content-card.mdl-card .mdl-card__supporting-text .social-link {
       color: black;
-      margin: 0.25em 0.25em 0.25em 0.25em; }
+      margin: 0.25em 0.25em 0.25em 0.25em;
+      -o-transition: 0.25s;
+      -ms-transition: 0.25s;
+      -moz-transition: 0.25s;
+      -webkit-transition: 0.25s;
+      /* ...and now for the proper property */
+      transition: 0.25s; }
       .mdl-content-card.mdl-card .mdl-card__supporting-text .social-link:hover {
         color: #E65100; }
   .mdl-content-card.mdl-card .mdl-card__title {
@@ -107,15 +132,16 @@ a {
       margin-top: .5em;
       font-size: 1.5em; }
     #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-card {
-      min-height: auto; }
+      min-height: 0em; }
     #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell {
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-      min-width: 4em;
+      min-width: 5em;
       border-radius: 7px; }
       #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell .mdl-card__title {
-        padding: 0.25em 0.25em 0.25em 0.5em;
-        text-align: center; }
+        color: black;
+        padding: 0.25em 0.25em 0.25em 0.5em; }
       #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell .mdl-card__supporting-text {
+        color: black;
         padding: 0.25em 0.25em 0.25em 0.5em; }
       #skillContainer .mdl-parentSkill-card .mdl-grid .mdl-skill-card.mdl-cell:hover {
         background-color: #E0E0E0;
