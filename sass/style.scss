@@ -36,13 +36,17 @@ a{
 	color: $primary-color;
 }
 
+img {
+  max-width: 100%;
+}
+
 
 .mdl-layout{
 	.mdl-layout__header{
 		background-color: $primary-color;
 		color: $header-color;
 		.mdl-layout-title{
-/*			font-size: $font-size + 2;*/
+			font-size: $font-size + 1;
 			font-weight: thin;
 		}
 
@@ -96,14 +100,16 @@ a{
 #sideDrawer{
 	background-color: $body-background;
 	.mdl-navigation{
-		-o-transition:$hover-time;
-		-ms-transition:$hover-time;
-		-moz-transition:$hover-time;
-		-webkit-transition:$hover-time;
-		/* ...and now for the proper property */
-		transition:$hover-time;
 		.mdl-navigation__link{
 			color: black;
+
+			-o-transition:$hover-time;
+			-ms-transition:$hover-time;
+			-moz-transition:$hover-time;
+			-webkit-transition:$hover-time;
+			/* ...and now for the proper property */
+			transition:$hover-time;
+
 			&:hover{
 				color: white;
 				background-color: $primary-dark;
@@ -115,6 +121,12 @@ a{
 		.nav-bar-social{
 			margin: auto;
 			a{
+				-o-transition:$hover-time;
+				-ms-transition:$hover-time;
+				-moz-transition:$hover-time;
+				-webkit-transition:$hover-time;
+				/* ...and now for the proper property */
+				transition:$hover-time;
 				color: black;
 
 				&:hover{
@@ -285,4 +297,14 @@ form{
 	.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
 		background-color: $accent-color;
 	}
+}
+
+.profilePic{
+	border-radius: 50%;
+	margin-top: .5em;
+	margin-left: .5em;
+	margin-right: .5em;
+	@import shadow-2dp();
+	height: 100%;
+	max-width: 100%;
 }
