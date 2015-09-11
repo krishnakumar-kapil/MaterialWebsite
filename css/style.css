@@ -14,8 +14,12 @@ img {
   background-color: #4CAF50;
   color: black; }
   .mdl-layout .mdl-layout__header .mdl-layout-title {
+    width: auto;
     font-size: 2em;
     font-weight: 300; }
+    @media screen and (max-width: 320px) {
+      .mdl-layout .mdl-layout__header .mdl-layout-title {
+        width: 100%; } }
     .mdl-layout .mdl-layout__header .mdl-layout-title span {
       font-weight: 350; }
   .mdl-layout .mdl-layout__header .mdl-layout__drawer-button {
@@ -73,7 +77,8 @@ img {
       -webkit-box-shadow: inset 0 0 0.15em #000000;
       box-shadow: inset 0 0 0.15em #000000; }
   #sideDrawer .mdl-navigation .nav-bar-social {
-    margin: auto; }
+    margin: auto;
+    text-align: center; }
     #sideDrawer .mdl-navigation .nav-bar-social a {
       -o-transition: 0.25s;
       -ms-transition: 0.25s;
@@ -127,6 +132,17 @@ img {
     .mdl-content-card.mdl-card .mdl-card__title a {
       /*color: $accent-color;*/ }
 
+@media screen and (max-width: 320px) {
+  .mdl-layout__content .mdl-grid {
+    padding: 0 0 0 0; } }
+
+.mdl-layout__content .mdl-grid .page-content {
+  margin: 0.5em 0.5em 0.5em 0.5em; }
+  @media screen and (max-width: 320px) {
+    .mdl-layout__content .mdl-grid .page-content {
+      margin: 0 0 0 0;
+      width: 100%; } }
+
 .mdl-grid {
   width: auto; }
   .mdl-grid .mdl-cell {
@@ -150,6 +166,9 @@ img {
     background-color: #E0E0E0;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     border-radius: 7px; }
+    @media screen and (max-width: 320px) {
+      #skillContainer .mdl-parentSkill-card {
+        margin: 0.5em 0.5em 0 0; } }
     #skillContainer .mdl-parentSkill-card .mdl-parentSkill__title {
       margin-left: .5em;
       margin-top: .5em;
@@ -209,18 +228,22 @@ img {
   #employmentSears .mdl-card__supporting-text ul {
     padding-left: 1em; }
 
-form {
+@media screen and (max-width: 320px) {
+  #contact .super-content-card {
+    padding: 0.5em 0.5em 0.5em 0.5em; } }
+
+#contact form {
   text-align: center; }
-  form .form-element {
+  #contact form .form-element {
     width: 100%; }
-  form .mdl-textfield {
+  #contact form .mdl-textfield {
     color: #E65100; }
-  form form-button {
+  #contact form form-button {
     margin: auto; }
-  form .mdl-button--accent.mdl-button--accent.mdl-button--raised, form .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  #contact form .mdl-button--accent.mdl-button--accent.mdl-button--raised, #contact form .mdl-button--accent.mdl-button--accent.mdl-button--fab {
     color: rgba(255, 255, 255, 0.8);
     background-color: black; }
-    form .mdl-button--accent.mdl-button--accent.mdl-button--raised:hover, form .mdl-button--accent.mdl-button--accent.mdl-button--fab:hover {
+    #contact form .mdl-button--accent.mdl-button--accent.mdl-button--raised:hover, #contact form .mdl-button--accent.mdl-button--accent.mdl-button--fab:hover {
       color: rgba(255, 255, 255, 0.8);
       background-color: #E65100;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }

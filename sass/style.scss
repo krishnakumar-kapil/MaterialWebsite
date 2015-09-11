@@ -82,8 +82,14 @@ img {
 		background-color: $primary-color;
 		color: $header-color;
 		.mdl-layout-title{
+			width: auto;
 			font-size: $font-size + 1;
+			@media screen and (max-width: $break-small) {
+				width: 100%;
+				$font-size: $font-size;
+		  	}
 			font-weight: $font-weight;
+			
 			span{
 				font-weight: $font-weight-thick;
 			}
@@ -172,13 +178,12 @@ img {
 	}
 }
 
-
-
 .super-content-card.mdl-card{
 	width: 100%;
 	background-color: $card-super-background;
 	@include shadow-2dp();
 	font-weight: $font-weight;
+
 	.contentHeader{
 		font-weight: $font-weight;
 		text-align: left;
@@ -218,6 +223,21 @@ img {
 	}
 }
 
+.mdl-layout__content{
+	.mdl-grid{
+			@media screen and (max-width: $break-small) {
+				padding: 0 0 0 0 ;
+		  	}
+
+			.page-content{
+				margin: .5em .5em .5em .5em;
+				@media screen and (max-width: $break-small) {
+					margin: 0 0 0 0;
+					width: 100%;
+		  		}
+			}
+	}
+}
 
 
 .mdl-grid{
@@ -247,7 +267,10 @@ img {
 		background-color: $body-background;
 		@include shadow-2dp();
 		border-radius: $skill-border-radius;
-
+		
+		@media screen and (max-width: $break-small) {
+			margin: .5em .5em 0 0;
+	  	}
 		.mdl-parentSkill__title{
 
 			margin-left: .5em;
@@ -329,21 +352,29 @@ img {
 	}
 }
 
-form{
-	text-align: center;
-	.form-element{
-		width: 100%;
-	}
-	.mdl-textfield{
-		color: $accent-color;
+#contact{
+	.super-content-card{
+			@media screen and (max-width: $break-small) {
+				padding: .5em .5em .5em .5em;
+		  	}
 	}
 
-	form-button{
-		margin: auto;
-	}
+	form{
+		text-align: center;
+		.form-element{
+			width: 100%;
+		}
+		.mdl-textfield{
+			color: $accent-color;
+		}
 
-	.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
-		@include buttonColor();
+		form-button{
+			margin: auto;
+		}
+
+		.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
+			@include buttonColor();
+		}
 	}
 }
 
