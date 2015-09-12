@@ -21,13 +21,18 @@ $font-small: .5em;
 
 $break-small: 320px;
 $break-tablet: 768px;
-$break-desktop: 1224px;
+$break-desktop: 1024px;
+
+$break-tablet-small: 682px;
 
 $skill-border-radius: 7px;
 $skill-padding: .5em;
 $skill-text-color: black;
 
 $nav-shadow: .15em;
+
+$icon-padding: .5em;
+$text-padding: .25em;
 
 @function set-notification-text-color($color) {
   @if (lightness($color) > 50) {
@@ -62,6 +67,17 @@ $nav-shadow: .15em;
 		}
 }
 
+@mixin proPic(){
+	border-radius: 50%;
+	margin-top: 2.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	@include shadow-4dp();
+	height: 6em;
+	width: 6em;
+	max-width: 100%;
+}
+
 body {
 	color: black;
 	font-family: 100% $font-stack;
@@ -86,6 +102,13 @@ i{
 	.mdl-layout__header{
 		background-color: $primary-color;
 		color: $header-color;
+		.profilePic{
+			@include proPic();
+		  	@media screen and (max-width: $break-tablet) {
+				margin-left: .35em;
+				margin-right: .35em;
+		  	}
+		}
 		.mdl-layout-title{
 			width: auto;
 			font-size: $font-size + 1;
@@ -114,15 +137,32 @@ i{
 
 		.mdl-navigation{
 			text-align: center;
+			@media screen and (max-width: $break-tablet) {
+					text-align:right;
+		  	}
+			margin-left: .25em;
+			margin-right: .25em;
 			.mdl-navigation__link{
 				color: $header-color;
 				font-weight: $font-weight;
 				font-size: $font-size+.25;
+				height: 100%;
+
+
+				padding-left: $text-padding;
+				padding-right: $text-padding;
+			  	@media screen and (max-width: $break-desktop) {
+					vertical-align: center;
+					padding-left: $icon-padding;
+					padding-right: $icon-padding;
+					/*width: 100%;*/
+			  	}
+
 				-o-transition:$hover-time;
 				-ms-transition:$hover-time;
 				-moz-transition:$hover-time;
 				-webkit-transition:$hover-time;
-				/* ...and now for the proper property */
+				/* ...and now for the proper property */				
 				transition:$hover-time;
 				&:hover {
 				   background-color: $primary-dark;
@@ -132,10 +172,17 @@ i{
 				   -webkit-box-shadow: inset 0 0 $nav-shadow #000000;
 				   box-shadow:         inset 0 0 $nav-shadow #000000;
 				   
+			 	}	 			
+			 	i{
+			 		margin-top: 1em;
+			 		padding-left: .25em;
+			 		padding-right: .25em;
+			 		vertical-align: center;
+		 		  	@media screen and (max-width: $break-tablet-small) {
+		 				display:none;
+		 		  	}
 			 	}
-			 	&:active{
-			 		
-			 	}			 	
+		 	  	
 			}
 
 			.active{
@@ -148,6 +195,7 @@ i{
 #sideDrawer{
 	background-color: $body-background;
 	.profilePic{
+		@include proPic();
 		margin: 1em auto;
 	}
 	.mdl-navigation{
@@ -265,7 +313,6 @@ i{
 #skillContainer{
 	width: 100%;
 	.mdl-parentSkill-card{
-		min-width: 50%;
 		background-color: $body-background;
 		@include shadow-2dp();
 		border-radius: $skill-border-radius;
@@ -380,13 +427,4 @@ i{
 	}
 }
 
-.profilePic{
-	border-radius: 50%;
-	margin-top: 2.5em;
-	margin-left: 1em;
-	margin-right: 1em;
-	@include shadow-4dp();
-	height: 6em;
-	width: 6em;
-	max-width: 100%;
-}
+
