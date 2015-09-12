@@ -93,10 +93,6 @@ img {
   max-width: 100%;
 }
 
-i{
-	margin: .25em .25em .25em .25em;
-}
-
 
 .mdl-layout{
 	.mdl-layout__header{
@@ -175,13 +171,15 @@ i{
 			 	}	 			
 			 	i{
 			 		margin-top: 1em;
-			 		padding-left: .25em;
-			 		padding-right: .25em;
+			 		margin-left: .25em;
+			 		margin-right: .25em;
+			 		padding: .25em .25em .25em .25em;
 			 		vertical-align: center;
 		 		  	@media screen and (max-width: $break-tablet-small) {
 		 				display:none;
 		 		  	}
 			 	}
+			 	
 		 	  	
 			}
 

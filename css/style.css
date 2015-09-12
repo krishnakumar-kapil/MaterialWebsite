@@ -10,9 +10,6 @@ a {
 img {
   max-width: 100%; }
 
-i {
-  margin: 0.25em 0.25em 0.25em 0.25em; }
-
 .mdl-layout .mdl-layout__header {
   background-color: #4CAF50;
   color: black; }
@@ -86,8 +83,9 @@ i {
         box-shadow: inset 0 0 0.15em #000000; }
       .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link i {
         margin-top: 1em;
-        padding-left: .25em;
-        padding-right: .25em;
+        margin-left: .25em;
+        margin-right: .25em;
+        padding: 0.25em 0.25em 0.25em 0.25em;
         vertical-align: center; }
         @media screen and (max-width: 682px) {
           .mdl-layout .mdl-layout__header .mdl-navigation .mdl-navigation__link i {
