@@ -1,6 +1,53 @@
 - Skills to chart?
 - Add more projects
 - Add super content card properly to contact and projects
+- Add picture near title bar so that it covers a bit more
+- Change active state in navbar?
 
 
 - Change color for each content card
+- Fix graphic design internship
+- ADD RESUME !!!!!
+
+
+- In mobile remove end margins
+
+
+
+
+
+Programming
+
+Java
+Python
+C
+Swift
+Objective C
+
+
+WebDev
+JavaScript
+HTML
+CSS
+SASS
+Gulp
+NodeJS
+AngularJs
+JQuery
+AJAX
+JSON
+YAML
+
+Design
+Photoshop
+Flash
+Illustrator
+Material Design
+
+Other Technical
+Unix
+Git
+
+Mobile
+Android
+iOS
